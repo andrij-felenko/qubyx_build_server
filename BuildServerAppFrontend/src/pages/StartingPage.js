@@ -5,7 +5,7 @@ import History from '../components/History';
 
 import { io } from 'socket.io-client'
 import { useLocalHistory } from '../context/historyContext';
-const socket = io.connect("http://192.168.0.92:3002")
+const socket = io.connect("http://192.168.0.91:3002")
 
 const StartingPage = () => {
   const [items, setItems] = useState([]);

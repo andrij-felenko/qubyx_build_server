@@ -420,8 +420,8 @@ let branchList = execSync(`git --git-dir=${process.env.PERFECTLUM_PATH}/.git bra
     .split('origin/')
     .filter(item => item);  
 
-branchList = branchList.filter(item => !item.includes('HEAD') && !item.includes('dev'));
-
+branchList = branchList.filter(item => !item.includes('HEAD'));
+branchList = uniq = [...new Set(branchList)];
 
 //Post request
 // app.post('/items', async (req, resp) => {
@@ -481,7 +481,7 @@ timeCall();
 
 const io = require("socket.io")(3002, {
     cors: {
-        origin: ["http://192.168.0.92:3000"],
+        origin: ["http://192.168.0.91:3000"],
     }
 });
 
