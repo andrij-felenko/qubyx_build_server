@@ -271,7 +271,7 @@ const Form = ({ onAddItem }) => {
                                 </div>
                                 {<div className={activeQtVersionx64 ? 'qt-version-btns' : 'not-active-qt-version-btnsx64'}>
                                     {qtx64Version.map(item => (
-                                        <div data-aos='flip-up' data-aos-delay='100' className='qt-version' key={item.version}>
+                                        <div className='qt-version' key={item.version}>
                                             <input 
                                                 type='radio' 
                                                 name='x64-version'
@@ -289,7 +289,7 @@ const Form = ({ onAddItem }) => {
                                 </div>
                                 {<div className={activeQtVersionx86 ? 'qt-version-btns' : 'not-active-qt-version-btnsx86'}>
                                     {qtx86Version.map(item => (
-                                        <div data-aos='flip-up' data-aos-delay='200' className='qt-version' key={item.version}>
+                                        <div className='qt-version' key={item.version}>
                                             <input 
                                                 type='radio'
                                                 name='x86-version'
