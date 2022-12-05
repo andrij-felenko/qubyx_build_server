@@ -1,0 +1,28 @@
+.header {
+    background-color: #5e6072;
+    padding: 20px 10px 30px 10px;
+    /* background-color: #eee; */
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: inherit;
+}
+header p {
+    color: inherit;
+    font-size: 18px;
+    font-style: italic;
+}
+
+header .nav-links {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    header .nav-links {
+        display: block;
+    }
+}

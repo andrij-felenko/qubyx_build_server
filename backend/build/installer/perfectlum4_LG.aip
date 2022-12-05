@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="10.9.1" version="14.0" Modules="architect" RootPath="." Language="en" Id="{26D5C128-19A7-4DB4-9E41-E5EBEC371F6A}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXAppDetailsComponent;AppXCapabilitiesComponent;AppXDependenciesComponent;AppXProductDetailsComponent;AppXVisualAssetsComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_ThemeStyle" Value="default" MultiBuildValue="DefaultBuild:classic" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPHELPLINK" Value="http://qubyx.com"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPPRODUCTICON" Value="PerfectLum.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="http://qubyx.com"/>
+    <ROW Property="BannerBitmap" Value="banner" MultiBuildValue="DefaultBuild:TopImage.bmp" Type="1" MsiKey="BannerBitmap"/>
+    <ROW Property="DialogBitmap" Value="dialog" MultiBuildValue="DefaultBuild:SideImage.bmp" Type="1" MsiKey="DialogBitmap"/>
+    <ROW Property="INSTALL_DRIVERS" Value="checked" Type="4"/>
+    <ROW Property="LICENSE_EMAIL" Value=" "/>
+    <ROW Property="LICENSE_KEY" Value=" "/>
+    <ROW Property="LICENSE_LINK" Value="http://software-registration.org/registeronline.php"/>
+    <ROW Property="Manufacturer" Value="LG Electronics"/>
+    <ROW Property="PROXY_PASSWORD" Value=" "/>
+    <ROW Property="PROXY_PORT" Value=" "/>
+    <ROW Property="PROXY_SERVER_IP" Value=" "/>
+    <ROW Property="PROXY_USER" Value=" "/>
+    <ROW Property="ProductCode" Value="1033:{873FDB9C-DB0B-446E-983C-C9B5F92E6B6F} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="PerfectLum 4"/>
+    <ROW Property="ProductVersion" Value="4.0.1" Type="32"/>
+    <ROW Property="REMOTE_LINK" Value="https://remote.qbx.info"/>
+    <ROW Property="REMOTE_NAME" Value=" "/>
+    <ROW Property="REMOTE_PASSWORD" Value=" "/>
+    <ROW Property="REMOTE_USER" Value=" "/>
+    <ROW Property="FAKE_START" Value="true"/>
+    <ROW Property="REMOTE_USERNAME" Value=" "/>
+    <ROW Property="REMOTE_WORKGROUP" Value=" "/>
+    <ROW Property="SHOW_FIRSTRUN_WINDOW" Value=" "/>
+    <ROW Property="SILENCE_MSG" Value=" "/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;UPGRADE_1"/>
+    <ROW Property="USE_PROXY" Value=" "/>
+    <ROW Property="UpgradeCode" Value="{CB9706AC-AF22-458E-89C6-1AADB03F2B4C}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Common32_Dir" Directory_Parent="LG_Dir" DefaultDir="COMMON~1|Common-32"/>
+    <ROW Directory="Common64_Dir" Directory_Parent="LG_Dir" DefaultDir="COMMON~2|Common-64"/>
+    <ROW Directory="CommonAppDataFolder" Directory_Parent="TARGETDIR" DefaultDir="COMMON~1|CommonAppDataFolder" IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Drivers_Dir" Directory_Parent="APPDIR" DefaultDir="Drivers"/>
+    <ROW Directory="EyeOne_Dir" Directory_Parent="Drivers_Dir" DefaultDir="Eye-One"/>
+    <ROW Directory="Gossen_Dir" Directory_Parent="Drivers_Dir" DefaultDir="Gossen"/>
+    <ROW Directory="LG_Dir" Directory_Parent="Drivers_Dir" DefaultDir="LG"/>
+    <ROW Directory="MinoltaCS200_Dir" Directory_Parent="Drivers_Dir" DefaultDir="MINOLT~1|MinoltaCS200"/>
+    <ROW Directory="Minolta_Dir" Directory_Parent="Drivers_Dir" DefaultDir="Minolta"/>
+    <ROW Directory="Pehamed_Dir" Directory_Parent="Drivers_Dir" DefaultDir="Pehamed"/>
+    <ROW Directory="PerfectLum4_Dir" Directory_Parent="Qubyx_1_Dir" DefaultDir="PERFEC~1|PerfectLum 4"/>
+    <ROW Directory="PerfectLum_Dir" Directory_Parent="Qubyx_Dir" DefaultDir="PERFEC~1|PerfectLum"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="QbxDrivers_Dir" Directory_Parent="APPDIR" DefaultDir="QBXDRI~1|QbxDrivers"/>
+    <ROW Directory="QubyxPCIDeviceDriver_Dir" Directory_Parent="QbxDrivers_Dir" DefaultDir="QUBYXP~1|QubyxPCIDeviceDriver"/>
+    <ROW Directory="Qubyx_1_Dir" Directory_Parent="ProgramMenuFolder" DefaultDir="Qubyx"/>
+    <ROW Directory="Qubyx_Dir" Directory_Parent="CommonAppDataFolder" DefaultDir="Qubyx"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="SequelChroma4_Dir" Directory_Parent="Drivers_Dir" DefaultDir="SEQUEL~1|Sequel Chroma4"/>
+    <ROW Directory="Sequel_Dir" Directory_Parent="Drivers_Dir" DefaultDir="Sequel"/>
+    <ROW Directory="Spyder3Print_Dir" Directory_Parent="Drivers_Dir" DefaultDir="SPYDER~1|Spyder3Print"/>
+    <ROW Directory="Spyder4_Dir" Directory_Parent="Drivers_Dir" DefaultDir="Spyder4"/>
+    <ROW Directory="Spyder5_Dir" Directory_Parent="Drivers_Dir" DefaultDir="Spyder5"/>
+    <ROW Directory="Spyder_Dir" Directory_Parent="Drivers_Dir" DefaultDir="Spyder"/>
+    <ROW Directory="StartupFolder" Directory_Parent="TARGETDIR" DefaultDir="STARTU~1|StartupFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Static_Dir" Directory_Parent="Pehamed_Dir" DefaultDir="Static"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="Vista32_Dir" Directory_Parent="MinoltaCS200_Dir" DefaultDir="Vista32"/>
+    <ROW Directory="Vista64_Dir" Directory_Parent="MinoltaCS200_Dir" DefaultDir="Vista64"/>
+    <ROW Directory="WIDE_Dir" Directory_Parent="Drivers_Dir" DefaultDir="WIDE"/>
+    <ROW Directory="Win732_Dir" Directory_Parent="LG_Dir" DefaultDir="Win7-32"/>
+    <ROW Directory="Win764_Dir" Directory_Parent="LG_Dir" DefaultDir="Win7-64"/>
+    <ROW Directory="XP32_Dir" Directory_Parent="MinoltaCS200_Dir" DefaultDir="2000-X~1|2000-XP32"/>
+    <ROW Directory="XP64_Dir" Directory_Parent="MinoltaCS200_Dir" DefaultDir="2000-X~2|2000-XP64"/>
+    <ROW Directory="XRite_Dir" Directory_Parent="Drivers_Dir" DefaultDir="X-Rite"/>
+    <ROW Directory="amd64_1_Dir" Directory_Parent="Minolta_Dir" DefaultDir="amd64"/>
+    <ROW Directory="amd64_2_Dir" Directory_Parent="Spyder_Dir" DefaultDir="amd64"/>
+    <ROW Directory="amd64_3_Dir" Directory_Parent="Spyder3Print_Dir" DefaultDir="amd64"/>
+    <ROW Directory="amd64_4_Dir" Directory_Parent="Spyder4_Dir" DefaultDir="amd64"/>
+    <ROW Directory="amd64_5_Dir" Directory_Parent="Spyder5_Dir" DefaultDir="amd64"/>
+    <ROW Directory="amd64_6_Dir" Directory_Parent="Pehamed_Dir" DefaultDir="amd64"/>
+    <ROW Directory="amd64_7_Dir" Directory_Parent="Static_Dir" DefaultDir="amd64"/>
+    <ROW Directory="amd64_Dir" Directory_Parent="Gossen_Dir" DefaultDir="amd64"/>
+    <ROW Directory="audio_Dir" Directory_Parent="plugins_Dir" DefaultDir="audio"/>
+    <ROW Directory="bearer_Dir" Directory_Parent="plugins_Dir" DefaultDir="bearer"/>
+    <ROW Directory="i386_1_Dir" Directory_Parent="Minolta_Dir" DefaultDir="i386"/>
+    <ROW Directory="i386_2_Dir" Directory_Parent="Spyder_Dir" DefaultDir="i386"/>
+    <ROW Directory="i386_3_Dir" Directory_Parent="Spyder3Print_Dir" DefaultDir="i386"/>
+    <ROW Directory="i386_4_Dir" Directory_Parent="Spyder4_Dir" DefaultDir="i386"/>
+    <ROW Directory="i386_5_Dir" Directory_Parent="Spyder5_Dir" DefaultDir="i386"/>
+    <ROW Directory="i386_6_Dir" Directory_Parent="Pehamed_Dir" DefaultDir="i386"/>
+    <ROW Directory="i386_7_Dir" Directory_Parent="Static_Dir" DefaultDir="i386"/>
+    <ROW Directory="i386_Dir" Directory_Parent="Gossen_Dir" DefaultDir="i386"/>
+    <ROW Directory="iconengines_Dir" Directory_Parent="plugins_Dir" DefaultDir="ICONEN~1|iconengines"/>
+    <ROW Directory="imageformats_Dir" Directory_Parent="plugins_Dir" DefaultDir="IMAGEF~1|imageformats"/>
+    <ROW Directory="images_Dir" Directory_Parent="APPDIR" DefaultDir="images"/>
+    <ROW Directory="mediaservice_Dir" Directory_Parent="plugins_Dir" DefaultDir="MEDIAS~1|mediaservice"/>
+    <ROW Directory="platforms_Dir" Directory_Parent="plugins_Dir" DefaultDir="PLATFO~1|platforms"/>
+    <ROW Directory="playlistformats_Dir" Directory_Parent="plugins_Dir" DefaultDir="PLAYLI~1|playlistformats"/>
+    <ROW Directory="plugins_Dir" Directory_Parent="APPDIR" DefaultDir="plugins"/>
+    <ROW Directory="printsupport_Dir" Directory_Parent="plugins_Dir" DefaultDir="PRINTS~1|printsupport"/>
+    <ROW Directory="sqldrivers_Dir" Directory_Parent="plugins_Dir" DefaultDir="SQLDRI~1|sqldrivers"/>
+    <ROW Directory="x64_1_Dir" Directory_Parent="WIDE_Dir" DefaultDir="x64"/>
+    <ROW Directory="x64_Dir" Directory_Parent="QubyxPCIDeviceDriver_Dir" DefaultDir="x64"/>
+    <ROW Directory="x86_1_Dir" Directory_Parent="WIDE_Dir" DefaultDir="x86"/>
+    <ROW Directory="x86_Dir" Directory_Parent="QubyxPCIDeviceDriver_Dir" DefaultDir="x86"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="CA200Srvr.dll" ComponentId="{F1807114-286D-4CD3-8FF7-ABE8D890F2DA}" Directory_="Minolta_Dir" Attributes="0" KeyPath="CA200Srvr.dll"/>
+    <ROW Component="CA200Srvr.dll_1" ComponentId="{47F64104-6D10-44A3-97F5-3038FC7051C0}" Directory_="APPDIR" Attributes="0" KeyPath="CA200Srvr.dll_1"/>
+    <ROW Component="CPj2.dll" ComponentId="{D2ADA8D5-33D4-46CE-9D25-46DD4929F451}" Directory_="APPDIR" Attributes="0" KeyPath="CPj2.dll"/>
+    <ROW Component="ChromaB.inf" ComponentId="{303CAD9F-272C-44DD-9F07-A4139F473818}" Directory_="SequelChroma4_Dir" Attributes="0" KeyPath="ChromaB.inf" Type="0"/>
+    <ROW Component="CirrusSDK.dll" ComponentId="{691FF90D-E980-4A2C-93F2-8D8A0668725D}" Directory_="APPDIR" Attributes="0" KeyPath="CirrusSDK.dll"/>
+    <ROW Component="CommDLL.dll" ComponentId="{F83F1524-49BB-4E2E-97B6-46D24B44D47E}" Directory_="Minolta_Dir" Attributes="0" KeyPath="CommDLL.dll"/>
+    <ROW Component="CommDLL.dll_1" ComponentId="{C086C2DF-E190-4567-9426-DC81A469BDA6}" Directory_="APPDIR" Attributes="0" KeyPath="CommDLL.dll_1"/>
+    <ROW Component="Cpj.dll" ComponentId="{A1BD0731-0BF4-41DC-92BC-8BAC59909287}" Directory_="APPDIR" Attributes="0" KeyPath="Cpj.dll"/>
+    <ROW Component="Cpj01.dll" ComponentId="{DB8EA15F-114E-485F-BD36-197632212B59}" Directory_="APPDIR" Attributes="0" KeyPath="Cpj01.dll"/>
+    <ROW Component="Cpj05.dll" ComponentId="{DFBCCC4C-FB2A-4B73-B91B-5EBF931D6021}" Directory_="APPDIR" Attributes="0" KeyPath="Cpj05.dll"/>
+    <ROW Component="Cpj07.dll" ComponentId="{EE2F29F5-C64E-4213-9015-1D392996D94C}" Directory_="APPDIR" Attributes="0" KeyPath="Cpj07.dll"/>
+    <ROW Component="Cpj3.dll" ComponentId="{B1DCC41C-6BCB-4410-85CD-08DE824128BE}" Directory_="APPDIR" Attributes="0" KeyPath="Cpj3.dll"/>
+    <ROW Component="DDCCI_Service.exe" ComponentId="{6472394B-218F-4CC4-AA13-E87E81610780}" Directory_="APPDIR" Attributes="0" KeyPath="DDCCI_Service.exe"/>
+    <ROW Component="DDCHelper.dll" ComponentId="{8A8DFC4D-888B-4685-BB63-9030FA5E3A91}" Directory_="APPDIR" Attributes="0" KeyPath="DDCHelper.dll"/>
+    <ROW Component="DDCInstall64.exe" ComponentId="{E1274EF0-4CA1-44BC-84BA-70B86D38647F}" Directory_="APPDIR" Attributes="256" KeyPath="DDCInstall64.exe"/>
+    <ROW Component="DPInst.exe" ComponentId="{9A8EE5C8-31B3-41FA-94D0-43A841C31877}" Directory_="Drivers_Dir" Attributes="0" KeyPath="DPInst.exe"/>
+    <ROW Component="DPInstx64.exe" ComponentId="{0DA1B307-3D71-41DF-B0E1-7FA2559E85F6}" Directory_="Drivers_Dir" Attributes="256" KeyPath="DPInstx64.exe"/>
+    <ROW Component="DellMonitorSdkDll.dll" ComponentId="{23ABBCA8-7B6E-4B86-99F7-FA2668C1696C}" Directory_="APPDIR" Attributes="0" KeyPath="DellMonitorSdkDll.dll"/>
+    <ROW Component="Dell_DDCCI.dll" ComponentId="{E05BF04B-8E71-47D0-9F04-693F0DC3B735}" Directory_="APPDIR" Attributes="0" KeyPath="Dell_DDCCI.dll"/>
+    <ROW Component="EZEarth.dll" ComponentId="{167ED216-D7F2-45CB-BA9C-5876C2DFC6DB}" Directory_="APPDIR" Attributes="0" KeyPath="EZEarth.dll"/>
+    <ROW Component="FTChipID.dll" ComponentId="{8ECCF7C4-3FCA-497E-9500-6E2367127060}" Directory_="APPDIR" Attributes="0" KeyPath="FTChipID.dll"/>
+    <ROW Component="Kmsecs200.dll" ComponentId="{F41306D7-AADD-446B-8DDC-CD9102AEB1E8}" Directory_="APPDIR" Attributes="0" KeyPath="Kmsecs200.dll"/>
+    <ROW Component="Kmsecs200.inf" ComponentId="{322199C2-F8A5-4A82-87E5-7BD268C72972}" Directory_="XP32_Dir" Attributes="0" KeyPath="Kmsecs200.inf" Type="0"/>
+    <ROW Component="Kmsecs200.inf_1" ComponentId="{75B801EC-A1CF-43C2-92D2-59F9100ECDBA}" Directory_="XP64_Dir" Attributes="0" KeyPath="Kmsecs200.inf_1" Type="0"/>
+    <ROW Component="LICENSE.rtf" ComponentId="{37FA2297-F66B-42AC-A439-076419F45DEE}" Directory_="LG_Dir" Attributes="0" KeyPath="LICENSE.rtf" Type="0"/>
+    <ROW Component="LUTLoader.exe" ComponentId="{9CBBBE0E-9909-4110-BD2C-ADA5E5C1A71B}" Directory_="APPDIR" Attributes="0" KeyPath="LUTLoader.exe"/>
+    <ROW Component="LXPlus.dll" ComponentId="{EA66228C-8188-4A65-AABB-EEAFC2CFBB57}" Directory_="APPDIR" Attributes="0" KeyPath="LXPlus.dll"/>
+    <ROW Component="LightConNative.dll" ComponentId="{189AA81C-E094-4D3F-829C-1C800A210981}" Directory_="APPDIR" Attributes="0" KeyPath="LightConNative.dll"/>
+    <ROW Component="LutLoaderGuard.exe" ComponentId="{6C8F06E7-BA0C-4614-9402-97EF89C6FA15}" Directory_="APPDIR" Attributes="0" KeyPath="LutLoaderGuard.exe"/>
+    <ROW Component="Mltca200.sys" ComponentId="{F268E694-6FFC-4E2A-BF45-577F663E060A}" Directory_="amd64_1_Dir" Attributes="256" KeyPath="Mltca200.sys" Type="0"/>
+    <ROW Component="Mltca200.sys_1" ComponentId="{320ADC0C-B0C6-4DF4-ACF6-C5F36BB09EDC}" Directory_="i386_1_Dir" Attributes="0" KeyPath="Mltca200.sys_1" Type="0"/>
+    <ROW Component="PerfectLum.exe" ComponentId="{92A76C72-1B3A-40A2-9A1B-F05C6180CE1A}" Directory_="APPDIR" Attributes="0" KeyPath="PerfectLum.exe"/>
+    <ROW Component="PerfectLum4" ComponentId="{00D3C42B-E62E-4404-9B36-3D59F1D5DFF2}" Directory_="PerfectLum4_Dir" Attributes="0"/>
+    <ROW Component="ProductInformation" ComponentId="{F83DB207-BBFC-4CF8-B339-D2B3E70FEF55}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="Qt5Multimedia.dll" ComponentId="{427420C3-AD53-4C7D-B09B-FF2EF7E267C7}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5Multimedia.dll"/>
+    <ROW Component="Qt5Network.dll" ComponentId="{71DC7AC5-2B5C-4F96-AFB0-6664B669FEF2}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5Network.dll"/>
+    <ROW Component="Qt5PrintSupport.dll" ComponentId="{5F293E9A-CB22-43FB-BE1C-2B71C863FCA8}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5PrintSupport.dll"/>
+    <ROW Component="Qt5Widgets.dll" ComponentId="{A9D7A0A6-8644-4D0B-A7EA-5E1B35488414}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5Widgets.dll"/>
+    <ROW Component="Qt5Xlsx.dll" ComponentId="{AF214043-A3AC-45EF-A564-7EBB76831E7C}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5Xlsx.dll"/>
+    <ROW Component="QtSolutions_Servicehead.dll" ComponentId="{95F96BC3-C620-43C7-B816-690925C90CFF}" Directory_="APPDIR" Attributes="0" KeyPath="QtSolutions_Servicehead.dll"/>
+    <ROW Component="QubyxPCIDeviceDriver.sys" ComponentId="{6ED54AB6-E778-47AF-AADF-32CD7EA0B9DF}" Directory_="x64_Dir" Attributes="256" KeyPath="QubyxPCIDeviceDriver.sys" Type="0"/>
+    <ROW Component="QubyxPCIDeviceDriver.sys_1" ComponentId="{18831946-440B-459D-8296-CC39A6BCA7B4}" Directory_="x86_Dir" Attributes="0" KeyPath="QubyxPCIDeviceDriver.sys_1" Type="0"/>
+    <ROW Component="QubyxUACService.exe" ComponentId="{4677DA63-4BE0-4B2F-906C-B90EFF1F13F2}" Directory_="APPDIR" Attributes="0" KeyPath="QubyxUACService.exe"/>
+    <ROW Component="RsCRLib.dll" ComponentId="{1BF78DE8-4F53-4410-A900-11A561FC1FFD}" Directory_="APPDIR" Attributes="0" KeyPath="RsCRLib.dll"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{4B829C21-B86F-4621-995E-40FCC810365C}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="SMTPEmail.dll" ComponentId="{192B108E-4B28-47E7-90A3-B5D87931F3B9}" Directory_="APPDIR" Attributes="0" KeyPath="SMTPEmail.dll"/>
+    <ROW Component="SaveLogTool.exe" ComponentId="{03E30BE0-B657-48B5-804B-A5A6029B9F13}" Directory_="APPDIR" Attributes="0" KeyPath="SaveLogTool.exe"/>
+    <ROW Component="SipCal.dll" ComponentId="{10E55F42-A98D-4891-ADFA-C008AA7839DB}" Directory_="APPDIR" Attributes="0" KeyPath="SipCal.dll"/>
+    <ROW Component="Spyder3.cat" ComponentId="{53136F43-E04F-4D3E-B485-CA8C83F4F72B}" Directory_="Spyder_Dir" Attributes="0" KeyPath="Spyder3.cat" Type="0"/>
+    <ROW Component="Spyder3.dll" ComponentId="{53C9D1ED-1204-4534-A34D-AF9F143B7E7E}" Directory_="APPDIR" Attributes="0" KeyPath="Spyder3.dll"/>
+    <ROW Component="Spyder3.sys" ComponentId="{52912909-2338-451F-A025-EDAAF8A6DD11}" Directory_="amd64_2_Dir" Attributes="256" KeyPath="Spyder3.sys" Type="0"/>
+    <ROW Component="Spyder3.sys_1" ComponentId="{2B35D53F-99F6-4409-B920-64CDC949D758}" Directory_="i386_2_Dir" Attributes="0" KeyPath="Spyder3.sys_1" Type="0"/>
+    <ROW Component="TG18CH.png" ComponentId="{D56E8BB2-5068-4F35-B405-8DD120D11536}" Directory_="images_Dir" Attributes="0" KeyPath="TG18CH.png" Type="0"/>
+    <ROW Component="WdfCoInstaller01001.dll" ComponentId="{1E56C3C9-010C-4255-98A1-731AAD106DB8}" Directory_="amd64_2_Dir" Attributes="256" KeyPath="WdfCoInstaller01001.dll"/>
+    <ROW Component="WdfCoInstaller01001.dll_1" ComponentId="{3FF846CF-F4AF-4B28-B3B0-5E6F861ACE8F}" Directory_="i386_2_Dir" Attributes="0" KeyPath="WdfCoInstaller01001.dll_1"/>
+    <ROW Component="WdfCoInstaller01001.dll_2" ComponentId="{33761E72-D184-4921-B973-9E139ABF36D4}" Directory_="amd64_4_Dir" Attributes="256" KeyPath="WdfCoInstaller01001.dll_2"/>
+    <ROW Component="WdfCoInstaller01001.dll_3" ComponentId="{6BC26DA1-6AA2-4374-9068-9F130C661EC4}" Directory_="i386_4_Dir" Attributes="0" KeyPath="WdfCoInstaller01001.dll_3"/>
+    <ROW Component="WdfCoInstaller01001.dll_4" ComponentId="{F8B2742D-A038-4474-919B-C2B61AB453F5}" Directory_="amd64_5_Dir" Attributes="256" KeyPath="WdfCoInstaller01001.dll_4"/>
+    <ROW Component="WdfCoInstaller01001.dll_5" ComponentId="{0A3AC2C9-C619-41B9-8C71-A8D82C86AB4A}" Directory_="i386_5_Dir" Attributes="0" KeyPath="WdfCoInstaller01001.dll_5"/>
+    <ROW Component="WdfCoInstaller01007.dll" ComponentId="{10DC88E3-D414-49CE-925B-AD1D1948C705}" Directory_="amd64_3_Dir" Attributes="256" KeyPath="WdfCoInstaller01007.dll"/>
+    <ROW Component="WdfCoInstaller01007.dll_1" ComponentId="{B89A8EBD-3E06-466F-9C47-DB46B1707177}" Directory_="i386_3_Dir" Attributes="0" KeyPath="WdfCoInstaller01007.dll_1"/>
+    <ROW Component="WdfCoInstaller01009.dll" ComponentId="{E9F177DC-04C2-4022-964A-8287D46FB175}" Directory_="Common32_Dir" Attributes="0" KeyPath="WdfCoInstaller01009.dll"/>
+    <ROW Component="WdfCoInstaller01009.dll_1" ComponentId="{A89E44DA-60ED-40CF-994D-9A77D28D4BFD}" Directory_="Common64_Dir" Attributes="256" KeyPath="WdfCoInstaller01009.dll_1"/>
+    <ROW Component="WideUsbLib.dll" ComponentId="{7401E15F-890B-4F0C-BEDC-B368D8A14737}" Directory_="APPDIR" Attributes="0" KeyPath="WideUsbLib.dll"/>
+    <ROW Component="XdsIII.dll" ComponentId="{F421D40D-93D6-47D6-A13B-0D1344DE51BC}" Directory_="APPDIR" Attributes="0" KeyPath="XdsIII.dll"/>
+    <ROW Component="ca200_32.cat" ComponentId="{6E892D05-6201-4CCD-B1AE-DAB70D50AEF5}" Directory_="Minolta_Dir" Attributes="0" KeyPath="ca200_32.cat" Type="0"/>
+    <ROW Component="cdluxapi.dll" ComponentId="{52C9F586-CF28-47A0-AD1B-C3B0316F6720}" Directory_="APPDIR" Attributes="0" KeyPath="cdluxapi.dll"/>
+    <ROW Component="chroma.cat" ComponentId="{293C0E23-2B00-455A-9A8D-DB294AAF12A6}" Directory_="Sequel_Dir" Attributes="0" KeyPath="chroma.cat" Type="0"/>
+    <ROW Component="cs200_32.cat" ComponentId="{E2F082CC-46C3-48D5-A82E-657E9DF78729}" Directory_="Vista32_Dir" Attributes="0" KeyPath="cs200_32.cat" Type="0"/>
+    <ROW Component="cs200_64.cat" ComponentId="{DEDE2009-6222-4B0A-A35D-AE57E7B85E05}" Directory_="Vista64_Dir" Attributes="0" KeyPath="cs200_64.cat" Type="0"/>
+    <ROW Component="dccmtr.dll" ComponentId="{EB0B005A-E94C-4B76-B123-3F20687AFE8F}" Directory_="APPDIR" Attributes="0" KeyPath="dccmtr.dll"/>
+    <ROW Component="dccmtr.sys" ComponentId="{8C2E13A2-8523-41F5-9DCE-77F577D8FEC4}" Directory_="amd64_4_Dir" Attributes="256" KeyPath="dccmtr.sys" Type="0"/>
+    <ROW Component="dccmtr.sys_1" ComponentId="{F355EB3E-EB23-468C-A1D6-63A5EEE23377}" Directory_="i386_4_Dir" Attributes="0" KeyPath="dccmtr.sys_1" Type="0"/>
+    <ROW Component="dccmtr.sys_2" ComponentId="{092AC18D-B48B-402A-9767-09D6EB3D77BE}" Directory_="amd64_5_Dir" Attributes="256" KeyPath="dccmtr.sys_2" Type="0"/>
+    <ROW Component="dccmtr.sys_3" ComponentId="{75AB8A94-FF03-4297-B3CD-108A8988F0A5}" Directory_="i386_5_Dir" Attributes="0" KeyPath="dccmtr.sys_3" Type="0"/>
+    <ROW Component="dcscdrv.dll" ComponentId="{BCAEA142-2C60-4C03-A180-56F8DF00414B}" Directory_="APPDIR" Attributes="0" KeyPath="dcscdrv.dll"/>
+    <ROW Component="dcscusb.cat" ComponentId="{19A4B51B-835B-47CE-A598-620EE6B86710}" Directory_="Spyder3Print_Dir" Attributes="0" KeyPath="dcscusb.cat" Type="0"/>
+    <ROW Component="dcscusb.sys" ComponentId="{05C4C723-14E7-4518-8395-B1763691A445}" Directory_="amd64_3_Dir" Attributes="256" KeyPath="dcscusb.sys" Type="0"/>
+    <ROW Component="dcscusb.sys_1" ComponentId="{1CE2E046-7F9E-4D8B-AE60-17D884627ECC}" Directory_="i386_3_Dir" Attributes="0" KeyPath="dcscusb.sys_1" Type="0"/>
+    <ROW Component="dcxmtr.dll" ComponentId="{E5759D4D-D98B-425A-A156-B92848571034}" Directory_="APPDIR" Attributes="0" KeyPath="dcxmtr.dll"/>
+    <ROW Component="difxapi.dll" ComponentId="{FE2DBF8C-2936-4702-983E-B3BA2BEDF482}" Directory_="Common32_Dir" Attributes="0" KeyPath="difxapi.dll"/>
+    <ROW Component="difxapi.dll_1" ComponentId="{9E2B79D1-9578-497F-8AF8-D45BCF7C2980}" Directory_="Common64_Dir" Attributes="256" KeyPath="difxapi.dll_1"/>
+    <ROW Component="dpinst.xml" ComponentId="{BDF295D5-2BFB-418F-AD99-72958B2EE37E}" Directory_="Drivers_Dir" Attributes="0" KeyPath="dpinst.xml" Type="0"/>
+    <ROW Component="dsengine.dll" ComponentId="{FB4B2CD7-51F0-4D89-8D84-57604683A6F6}" Directory_="mediaservice_Dir" Attributes="0" KeyPath="dsengine.dll"/>
+    <ROW Component="ftbusui.dll" ComponentId="{49E5310B-F392-4F0E-BEF6-5D2A2A33C591}" Directory_="amd64_Dir" Attributes="256" KeyPath="ftbusui.dll"/>
+    <ROW Component="ftbusui.dll_1" ComponentId="{6D9010CB-2E22-4010-A2C6-DE6FBD2BDD40}" Directory_="i386_Dir" Attributes="0" KeyPath="ftbusui.dll_1"/>
+    <ROW Component="ftbusui.dll_2" ComponentId="{F2A0EA10-CCE3-42C8-A90C-3AB9F24509A4}" Directory_="amd64_6_Dir" Attributes="256" KeyPath="ftbusui.dll_2"/>
+    <ROW Component="ftbusui.dll_3" ComponentId="{BC724846-70F2-4F00-99B0-23F247C50E07}" Directory_="i386_6_Dir" Attributes="0" KeyPath="ftbusui.dll_3"/>
+    <ROW Component="ftcserco.dll" ComponentId="{C6847C78-118C-41DD-9741-7BDAC910FE6E}" Directory_="amd64_Dir" Attributes="256" KeyPath="ftcserco.dll"/>
+    <ROW Component="ftcserco.dll_1" ComponentId="{C17B5842-C55B-4474-B462-A21D2B7FA82E}" Directory_="i386_Dir" Attributes="0" KeyPath="ftcserco.dll_1"/>
+    <ROW Component="ftcserco.dll_2" ComponentId="{F96247FC-9CCE-4DE8-9069-4B78D98B7895}" Directory_="amd64_6_Dir" Attributes="256" KeyPath="ftcserco.dll_2"/>
+    <ROW Component="ftcserco.dll_3" ComponentId="{1729366E-9F44-4763-9533-6767532BE75C}" Directory_="i386_6_Dir" Attributes="0" KeyPath="ftcserco.dll_3"/>
+    <ROW Component="ftd2xx.dll" ComponentId="{FD0C34A4-826B-42BC-83B0-37C8CAE5FEB4}" Directory_="APPDIR" Attributes="0" KeyPath="ftd2xx.dll"/>
+    <ROW Component="ftd2xx.dll_1" ComponentId="{1B7948D7-1D06-4C4F-8BA7-7134B2CF4603}" Directory_="i386_Dir" Attributes="0" KeyPath="ftd2xx.dll_1"/>
+    <ROW Component="ftd2xx.dll_2" ComponentId="{7515DC7F-37F6-40FE-922B-6C44E1FB2FE9}" Directory_="i386_6_Dir" Attributes="0" KeyPath="ftd2xx.dll_2"/>
+    <ROW Component="ftd2xx.h" ComponentId="{C89DC737-53B1-49C5-9B44-7DB2B49DD92A}" Directory_="Gossen_Dir" Attributes="0" KeyPath="ftdibus.cat" Type="0"/>
+    <ROW Component="ftd2xx.h_1" ComponentId="{692F1163-9AA3-492F-9D98-281C4CECEB6E}" Directory_="Pehamed_Dir" Attributes="0" KeyPath="ftd2xx.h" Type="0"/>
+    <ROW Component="ftd2xx.lib" ComponentId="{48102BE7-3AC2-4CFB-8BD4-15E17B294181}" Directory_="amd64_Dir" Attributes="0" KeyPath="ftd2xx.lib" Type="0"/>
+    <ROW Component="ftd2xx.lib_1" ComponentId="{84E01091-747E-4A86-AB59-14CDC5E9996A}" Directory_="i386_Dir" Attributes="0" KeyPath="ftd2xx.lib_1" Type="0"/>
+    <ROW Component="ftd2xx.lib_2" ComponentId="{92DC7FD9-67D4-4F5D-BD71-10CE35AE4B4A}" Directory_="amd64_6_Dir" Attributes="0" KeyPath="ftd2xx.lib_2" Type="0"/>
+    <ROW Component="ftd2xx.lib_3" ComponentId="{1B61BAF8-A7BF-45C4-B205-5A2A0733E81E}" Directory_="i386_6_Dir" Attributes="0" KeyPath="ftd2xx.lib_3" Type="0"/>
+    <ROW Component="ftd2xx.lib_4" ComponentId="{C7632EEF-61B4-4B43-956B-06A1DC8D2FC8}" Directory_="amd64_7_Dir" Attributes="0" KeyPath="ftd2xx.lib_4" Type="0"/>
+    <ROW Component="ftd2xx.lib_5" ComponentId="{905A4D77-99F7-4E12-B406-63EC6EE3D68E}" Directory_="i386_7_Dir" Attributes="0" KeyPath="ftd2xx.lib_5" Type="0"/>
+    <ROW Component="ftd2xx64.dll" ComponentId="{0219ED4D-7784-4A52-8DA5-4531FE7660B2}" Directory_="amd64_Dir" Attributes="256" KeyPath="ftd2xx64.dll"/>
+    <ROW Component="ftd2xx64.dll_1" ComponentId="{9D67F092-1F77-4FC6-A19B-AB3C008810C4}" Directory_="amd64_6_Dir" Attributes="256" KeyPath="ftd2xx64.dll_1"/>
+    <ROW Component="ftlang.dll" ComponentId="{5C2E000A-850A-411D-A854-FD804BDA1F22}" Directory_="amd64_Dir" Attributes="256" KeyPath="ftlang.dll"/>
+    <ROW Component="ftlang.dll_1" ComponentId="{7436A4D4-BC13-4431-8BD5-211F1E9BC9F2}" Directory_="i386_Dir" Attributes="0" KeyPath="ftlang.dll_1"/>
+    <ROW Component="ftlang.dll_2" ComponentId="{5356BBB0-91B3-4077-8C58-23F079E29E9E}" Directory_="amd64_6_Dir" Attributes="256" KeyPath="ftlang.dll_2"/>
+    <ROW Component="ftlang.dll_3" ComponentId="{60564778-EFAB-4BE9-ABD3-195FFACAF768}" Directory_="i386_6_Dir" Attributes="0" KeyPath="ftlang.dll_3"/>
+    <ROW Component="ftserui2.dll" ComponentId="{58D22894-F237-43D2-A76B-68338E3241B6}" Directory_="amd64_Dir" Attributes="256" KeyPath="ftserui2.dll"/>
+    <ROW Component="ftserui2.dll_1" ComponentId="{70E7F7B4-C185-4CFA-ACB3-56AC5D7BEE34}" Directory_="i386_Dir" Attributes="0" KeyPath="ftserui2.dll_1"/>
+    <ROW Component="ftserui2.dll_2" ComponentId="{B759BA06-4F2F-46E5-AC74-04B7B562D142}" Directory_="amd64_6_Dir" Attributes="256" KeyPath="ftserui2.dll_2"/>
+    <ROW Component="ftserui2.dll_3" ComponentId="{678FE64C-BA1F-4602-8890-0D59313A078E}" Directory_="i386_6_Dir" Attributes="0" KeyPath="ftserui2.dll_3"/>
+    <ROW Component="hct99hid.dll" ComponentId="{D25C07C4-E250-44F9-9814-DBEC918C36B3}" Directory_="APPDIR" Attributes="0" KeyPath="hct99hid.dll"/>
+    <ROW Component="i1.sys" ComponentId="{75E409DF-AC27-4F00-A706-C870B1AFA4C2}" Directory_="EyeOne_Dir" Attributes="0" KeyPath="i1.sys" Type="0"/>
+    <ROW Component="i1Pro.dll" ComponentId="{7174857B-AFCD-4024-A909-D9139D8C36A2}" Directory_="APPDIR" Attributes="0" KeyPath="i1Pro.dll"/>
+    <ROW Component="i1d3SDK.dll" ComponentId="{468DE82D-EF54-4D74-9FA4-AADED3CE3A61}" Directory_="APPDIR" Attributes="0" KeyPath="i1d3SDK.dll"/>
+    <ROW Component="jeti_core.dll" ComponentId="{16FF6FDF-DE87-446D-9B6E-E1C166775E0D}" Directory_="APPDIR" Attributes="0" KeyPath="jeti_core.dll"/>
+    <ROW Component="lcd_calib.dll" ComponentId="{B35DE3BA-0AB2-4251-9B50-562432C06DB7}" Directory_="APPDIR" Attributes="0" KeyPath="lcd_calib.dll"/>
+    <ROW Component="libCSSG2.dll" ComponentId="{51B42A97-F1A8-4E5F-8388-08341BD992E2}" Directory_="APPDIR" Attributes="0" KeyPath="libCSSG2.dll"/>
+    <ROW Component="libDDCCImctrl.dll" ComponentId="{3A3DF890-2043-4D6D-9643-76208855BC7F}" Directory_="APPDIR" Attributes="0" KeyPath="libDDCCImctrl.dll"/>
+    <ROW Component="libEGL.dll" ComponentId="{33E9EC5C-FB47-436F-9F31-1D018C32B074}" Directory_="APPDIR" Attributes="0" KeyPath="libEGL.dll"/>
+    <ROW Component="libEizMonCtrl.dll" ComponentId="{BED9979A-04AA-45F8-8098-FE747300EE6F}" Directory_="APPDIR" Attributes="0" KeyPath="libEizMonCtrl.dll"/>
+    <ROW Component="libGLESV2.dll" ComponentId="{C9467C4F-FA20-45E5-92E3-2AB074D78382}" Directory_="APPDIR" Attributes="0" KeyPath="libGLESV2.dll"/>
+    <ROW Component="libHIDmctrl.dll" ComponentId="{ADB816FC-9740-4BEA-AB71-4B9EE6421636}" Directory_="APPDIR" Attributes="0" KeyPath="libHIDmctrl.dll"/>
+    <ROW Component="libKMcalib.dll" ComponentId="{17A1CB16-6CC6-45E1-9472-EE02B841517C}" Directory_="APPDIR" Attributes="0" KeyPath="libKMcalib.dll"/>
+    <ROW Component="libSerial.dll" ComponentId="{0F44DF25-64AD-444E-879D-F1333BD6F508}" Directory_="APPDIR" Attributes="0" KeyPath="libSerial.dll"/>
+    <ROW Component="libcolour.dll" ComponentId="{4E5160E1-031D-4C95-B309-74F2A33AC201}" Directory_="APPDIR" Attributes="0" KeyPath="libcolour.dll"/>
+    <ROW Component="libeay32.dll" ComponentId="{0598A78C-6C96-4711-A3C8-EE644BB32150}" Directory_="APPDIR" Attributes="0" KeyPath="libeay32.dll"/>
+    <ROW Component="libemc.dll" ComponentId="{C7A0C676-A4CC-4759-9963-6B036D6F97EA}" Directory_="APPDIR" Attributes="0" KeyPath="libemc.dll"/>
+    <ROW Component="libgcc_s_dw21.dll" ComponentId="{226CBD92-431D-49EC-B660-1F2CD5CE5F3E}" Directory_="APPDIR" Attributes="0" KeyPath="libgcc_s_dw21.dll"/>
+    <ROW Component="libmSensor.dll" ComponentId="{E9C8CFAF-DAAD-4F64-B87C-D37872FC013A}" Directory_="APPDIR" Attributes="0" KeyPath="libmSensor.dll"/>
+    <ROW Component="libmctrl.dll" ComponentId="{C987E69F-4AA1-4736-97EF-37267C3D9D5E}" Directory_="APPDIR" Attributes="0" KeyPath="libmctrl.dll"/>
+    <ROW Component="libmdcorrector.dll" ComponentId="{F712C5E9-044E-49EC-8658-DC3EFFA0117E}" Directory_="APPDIR" Attributes="0" KeyPath="libmdcorrector.dll"/>
+    <ROW Component="libmeasurementdevice.dll" ComponentId="{6274C677-9FCA-43CD-950D-9FC3D0B39100}" Directory_="APPDIR" Attributes="0" KeyPath="libmeasurementdevice.dll"/>
+    <ROW Component="libmptag.dll" ComponentId="{6D1E06A1-6EEA-448F-AB56-5CC733E94B05}" Directory_="APPDIR" Attributes="0" KeyPath="libmptag.dll"/>
+    <ROW Component="libscal.dll" ComponentId="{5AF6E1C7-1DDF-4FEB-AD5B-C6BEC76C38BA}" Directory_="APPDIR" Attributes="0" KeyPath="libscal.dll"/>
+    <ROW Component="libstdc6.dll" ComponentId="{6F3D9DCE-2DC4-4CD6-B968-320D1C1A6854}" Directory_="APPDIR" Attributes="0" KeyPath="libstdc6.dll"/>
+    <ROW Component="libwinpthread1.dll" ComponentId="{D9DE62F7-4E28-4214-9F8B-E7CA631D90AE}" Directory_="APPDIR" Attributes="0" KeyPath="libwinpthread1.dll"/>
+    <ROW Component="mltca200.dll" ComponentId="{9E3BD0FC-9CB2-4759-86B6-282D86D1E1B4}" Directory_="Minolta_Dir" Attributes="0" KeyPath="mltca200.dll"/>
+    <ROW Component="mltca200.dll_1" ComponentId="{14F65FF2-2A12-476D-B21D-79381A04166B}" Directory_="APPDIR" Attributes="0" KeyPath="mltca200.dll_1"/>
+    <ROW Component="opengl32sw.dll" ComponentId="{44F6A025-4C16-4855-9AE2-A22D0F172D76}" Directory_="APPDIR" Attributes="0" KeyPath="opengl32sw.dll"/>
+    <ROW Component="openssl_license.txt" ComponentId="{E2F11B1D-D86A-4DCD-BCB7-42873B9D91F6}" Directory_="APPDIR" Attributes="0" KeyPath="openssl_license.txt" Type="0"/>
+    <ROW Component="qdds.dll" ComponentId="{E161C15A-F20F-493E-BC10-AA9D16C5D0D5}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qdds.dll"/>
+    <ROW Component="qgenericbearer.dll" ComponentId="{DFB964F5-27AF-48DA-8734-AD5041CCF28A}" Directory_="bearer_Dir" Attributes="0" KeyPath="qgenericbearer.dll"/>
+    <ROW Component="qgif.dll" ComponentId="{21027C6B-3738-4C4E-AB3A-D65BFF5EB1B3}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qgif.dll"/>
+    <ROW Component="qicns.dll" ComponentId="{51043517-4FA1-4972-AE1D-52FEA286102E}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qicns.dll"/>
+    <ROW Component="qico.dll" ComponentId="{1673020D-9CBC-4CAE-8695-F6939C99996E}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qico.dll"/>
+    <ROW Component="qjpeg.dll" ComponentId="{27755098-2864-4DF3-B464-6013DF5708AD}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qjpeg.dll"/>
+    <ROW Component="qnativewifibearer.dll" ComponentId="{65EF7683-1543-4A12-A87C-CBA75F615C0D}" Directory_="bearer_Dir" Attributes="0" KeyPath="qnativewifibearer.dll"/>
+    <ROW Component="qsqlite.dll" ComponentId="{ED7149B8-5A59-4B38-98D1-FB016D091B92}" Directory_="sqldrivers_Dir" Attributes="0" KeyPath="qsqlite.dll"/>
+    <ROW Component="qsqlmysql.dll" ComponentId="{B3F4B2C6-E5C5-47B3-8B43-7CF25227B747}" Directory_="sqldrivers_Dir" Attributes="0" KeyPath="qsqlmysql.dll"/>
+    <ROW Component="qsqlodbc.dll" ComponentId="{5D02A00C-D80D-4AAC-89C6-7E46E4F257C2}" Directory_="sqldrivers_Dir" Attributes="0" KeyPath="qsqlodbc.dll"/>
+    <ROW Component="qsqlpsql.dll" ComponentId="{4D1F7D10-ACE7-415F-A05E-A4E9977929CB}" Directory_="sqldrivers_Dir" Attributes="0" KeyPath="qsqlpsql.dll"/>
+    <ROW Component="qsvg.dll" ComponentId="{3E6687AE-7860-489A-A483-3F533DACB640}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qsvg.dll"/>
+    <ROW Component="qsvgicon.dll" ComponentId="{B8F363A0-D77C-4EF2-B026-C0EA7102159A}" Directory_="iconengines_Dir" Attributes="0" KeyPath="qsvgicon.dll"/>
+    <ROW Component="qt5core.dll" ComponentId="{A6256CED-7309-4B68-9CD4-33892F698172}" Directory_="APPDIR" Attributes="0" KeyPath="qt5core.dll"/>
+    <ROW Component="qt5gui.dll" ComponentId="{BD716628-C0AD-4AA9-8CA9-08D58DD7CA85}" Directory_="APPDIR" Attributes="0" KeyPath="qt5gui.dll"/>
+    <ROW Component="qt5script.dll" ComponentId="{017800D0-B3CB-4978-A95B-557EAC302147}" Directory_="APPDIR" Attributes="0" KeyPath="qt5script.dll"/>
+    <ROW Component="qt5sql.dll" ComponentId="{9F8A5FA1-535B-4F12-94CA-E80CFB7701CF}" Directory_="APPDIR" Attributes="0" KeyPath="qt5sql.dll"/>
+    <ROW Component="qt5svg.dll" ComponentId="{E948FA53-6EB3-4DA6-A9DE-FB6CEA15AF79}" Directory_="APPDIR" Attributes="0" KeyPath="qt5svg.dll"/>
+    <ROW Component="qt5xml.dll" ComponentId="{CE55065C-5358-4AD1-9C41-69AD05BA6A45}" Directory_="APPDIR" Attributes="0" KeyPath="qt5xml.dll"/>
+    <ROW Component="qtaudio_windows.dll" ComponentId="{357EEDBA-C278-47B1-87C5-CFC7CE8CFD64}" Directory_="audio_Dir" Attributes="0" KeyPath="qtaudio_windows.dll"/>
+    <ROW Component="qtga.dll" ComponentId="{6F51AB38-DD7D-43CC-AD2E-DDF3996E06A2}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qtga.dll"/>
+    <ROW Component="qtiff.dll" ComponentId="{5EE1E60A-1AE1-44D2-BD7A-6C1C042D3A01}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qtiff.dll"/>
+    <ROW Component="qtmedia_audioengine.dll" ComponentId="{97A8868F-E012-4A19-BD4B-CFE502AB0AD2}" Directory_="mediaservice_Dir" Attributes="0" KeyPath="qtmedia_audioengine.dll"/>
+    <ROW Component="qtmultimedia_m3u.dll" ComponentId="{A0FA1846-F643-49ED-98C9-5146AB376CF8}" Directory_="playlistformats_Dir" Attributes="0" KeyPath="qtmultimedia_m3u.dll"/>
+    <ROW Component="qwbmp.dll" ComponentId="{CF92057B-3EAA-4EF9-B1DA-D2C6FA5E6452}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qwbmp.dll"/>
+    <ROW Component="qwebp.dll" ComponentId="{62E4C4D8-EE5A-4A3D-AB59-8BCBD0C140E0}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qwebp.dll"/>
+    <ROW Component="qwindows.dll" ComponentId="{A3D9AEFD-786C-4FE1-A8E6-796EBA8C7245}" Directory_="platforms_Dir" Attributes="0" KeyPath="qwindows.dll"/>
+    <ROW Component="spyder4.cat" ComponentId="{D976C49C-7FFA-4BCB-A1C4-FCE8A30CF069}" Directory_="Spyder4_Dir" Attributes="0" KeyPath="spyder4.cat" Type="0"/>
+    <ROW Component="spyder5.cat" ComponentId="{98D2D839-A534-48EC-8EA2-85CDD8407EB0}" Directory_="Spyder5_Dir" Attributes="0" KeyPath="spyder5.cat" Type="0"/>
+    <ROW Component="ssleay32.dll" ComponentId="{87496B61-8A34-4861-976D-ADD8E4D2D3FB}" Directory_="APPDIR" Attributes="0" KeyPath="ssleay32.dll"/>
+    <ROW Component="storage.db" ComponentId="{D16B4275-1285-437E-9DDB-FB8D902FFA72}" Directory_="PerfectLum_Dir" Attributes="0" KeyPath="storage.db" Type="0"/>
+    <ROW Component="ump3410.cat" ComponentId="{B1E25A6A-976C-49D2-AC55-C7ED3D091A71}" Directory_="Win732_Dir" Attributes="0" KeyPath="ump3410.cat" Type="0"/>
+    <ROW Component="ump3410.cat_1" ComponentId="{97FC94DA-30F4-43AF-8C4B-E0770F6DCD46}" Directory_="Win764_Dir" Attributes="0" KeyPath="ump3410.cat_1" Type="0"/>
+    <ROW Component="umpf3410.i51" ComponentId="{63A8A269-6A76-4F4C-B6AA-900A36C857F8}" Directory_="Common32_Dir" Attributes="0" KeyPath="umpf3410.i51" Type="0"/>
+    <ROW Component="umpf3410.i51_1" ComponentId="{FDFAC411-B741-4546-AFA8-87A93E5A3EA7}" Directory_="Common64_Dir" Attributes="0" KeyPath="umpf3410.i51_1" Type="0"/>
+    <ROW Component="usbi2cmsc.dll" ComponentId="{8B88C2D9-5D63-4089-98B6-4930AE7FED3C}" Directory_="APPDIR" Attributes="0" KeyPath="usbi2cmsc.dll"/>
+    <ROW Component="usbinst.exe" ComponentId="{FBB933A5-842B-416A-9B03-9633068FE02F}" Directory_="Common32_Dir" Attributes="0" KeyPath="usbinst.exe"/>
+    <ROW Component="usbinst.exe_1" ComponentId="{7E8E4DCB-540D-4BF2-ACD2-660AF57E5B76}" Directory_="Common64_Dir" Attributes="256" KeyPath="usbinst.exe_1"/>
+    <ROW Component="wideusb.cat" ComponentId="{581BF5E1-AD75-411C-AEF5-25B60AEDF01B}" Directory_="x64_1_Dir" Attributes="0" KeyPath="wideusb.cat" Type="0"/>
+    <ROW Component="wideusb.cat_1" ComponentId="{ED5736CA-9147-4CCC-9510-62FA3673C4F8}" Directory_="x86_1_Dir" Attributes="0" KeyPath="wideusb.cat_1" Type="0"/>
+    <ROW Component="windowsprintersupport.dll" ComponentId="{1C8AE021-012F-4D42-B1E2-01791BFE083A}" Directory_="printsupport_Dir" Attributes="0" KeyPath="windowsprintersupport.dll"/>
+    <ROW Component="xrusb.cat" ComponentId="{B66C60D9-F0F0-46D9-B362-26C03D3DDED8}" Directory_="XRite_Dir" Attributes="0" KeyPath="xrusb.cat" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="CA200Srvr.dll CA200Srvr.dll_1 CPj2.dll ChromaB.inf CirrusSDK.dll CommDLL.dll CommDLL.dll_1 Cpj.dll Cpj01.dll Cpj05.dll Cpj07.dll Cpj3.dll DDCCI_Service.exe DDCHelper.dll DDCInstall64.exe DPInst.exe DPInstx64.exe DellMonitorSdkDll.dll Dell_DDCCI.dll EZEarth.dll FTChipID.dll Kmsecs200.dll Kmsecs200.inf Kmsecs200.inf_1 LICENSE.rtf LUTLoader.exe LXPlus.dll LightConNative.dll LutLoaderGuard.exe Mltca200.sys Mltca200.sys_1 PerfectLum.exe PerfectLum4 ProductInformation Qt5Multimedia.dll Qt5Network.dll Qt5PrintSupport.dll Qt5Widgets.dll Qt5Xlsx.dll QtSolutions_Servicehead.dll QubyxPCIDeviceDriver.sys QubyxPCIDeviceDriver.sys_1 QubyxUACService.exe RsCRLib.dll SHORTCUTDIR SMTPEmail.dll SaveLogTool.exe SipCal.dll Spyder3.cat Spyder3.dll Spyder3.sys Spyder3.sys_1 TG18CH.png WdfCoInstaller01001.dll WdfCoInstaller01001.dll_1 WdfCoInstaller01001.dll_2 WdfCoInstaller01001.dll_3 WdfCoInstaller01001.dll_4 WdfCoInstaller01001.dll_5 WdfCoInstaller01007.dll WdfCoInstaller01007.dll_1 WdfCoInstaller01009.dll WdfCoInstaller01009.dll_1 WideUsbLib.dll XdsIII.dll ca200_32.cat cdluxapi.dll chroma.cat cs200_32.cat cs200_64.cat dccmtr.dll dccmtr.sys dccmtr.sys_1 dccmtr.sys_2 dccmtr.sys_3 dcscdrv.dll dcscusb.cat dcscusb.sys dcscusb.sys_1 dcxmtr.dll difxapi.dll difxapi.dll_1 dpinst.xml dsengine.dll ftbusui.dll ftbusui.dll_1 ftbusui.dll_2 ftbusui.dll_3 ftcserco.dll ftcserco.dll_1 ftcserco.dll_2 ftcserco.dll_3 ftd2xx.dll ftd2xx.dll_1 ftd2xx.dll_2 ftd2xx.h ftd2xx.h_1 ftd2xx.lib ftd2xx.lib_1 ftd2xx.lib_2 ftd2xx.lib_3 ftd2xx.lib_4 ftd2xx.lib_5 ftd2xx64.dll ftd2xx64.dll_1 ftlang.dll ftlang.dll_1 ftlang.dll_2 ftlang.dll_3 ftserui2.dll ftserui2.dll_1 ftserui2.dll_2 ftserui2.dll_3 hct99hid.dll i1.sys i1Pro.dll i1d3SDK.dll jeti_core.dll lcd_calib.dll libCSSG2.dll libDDCCImctrl.dll libEGL.dll libEizMonCtrl.dll libGLESV2.dll libHIDmctrl.dll libKMcalib.dll libSerial.dll libcolour.dll libeay32.dll libemc.dll libgcc_s_dw21.dll libmSensor.dll libmctrl.dll libmdcorrector.dll libmeasurementdevice.dll libmptag.dll libscal.dll libstdc6.dll libwinpthread1.dll mltca200.dll mltca200.dll_1 opengl32sw.dll openssl_license.txt qdds.dll qgenericbearer.dll qgif.dll qicns.dll qico.dll qjpeg.dll qnativewifibearer.dll qsqlite.dll qsqlmysql.dll qsqlodbc.dll qsqlpsql.dll qsvg.dll qsvgicon.dll qt5core.dll qt5gui.dll qt5script.dll qt5sql.dll qt5svg.dll qt5xml.dll qtaudio_windows.dll qtga.dll qtiff.dll qtmedia_audioengine.dll qtmultimedia_m3u.dll qwbmp.dll qwebp.dll qwindows.dll spyder4.cat spyder5.cat ssleay32.dll storage.db ump3410.cat ump3410.cat_1 umpf3410.i51 umpf3410.i51_1 usbi2cmsc.dll usbinst.exe usbinst.exe_1 wideusb.cat wideusb.cat_1 windowsprintersupport.dll xrusb.cat"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="CA200Srvr.dll" Component_="CA200Srvr.dll" FileName="CA200S~1.DLL|CA200Srvr.dll" Attributes="0" SourcePath="Drivers\Minolta\CA200Srvr.dll" SelfReg="false" NextFile="ca200_32.cat"/>
+    <ROW File="CA200Srvr.dll_1" Component_="CA200Srvr.dll_1" FileName="CA200S~1.DLL|CA200Srvr.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\CA200Srvr.dll" SelfReg="false" NextFile="CommDLL.dll_1"/>
+    <ROW File="CPj2.dll" Component_="CPj2.dll" FileName="CPj2.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\CPj2.dll" SelfReg="false" NextFile="Cpj3.dll"/>
+    <ROW File="Chroma.inf" Component_="chroma.cat" FileName="Chroma.inf" Attributes="0" SourcePath="Drivers\Sequel\Chroma.inf" SelfReg="false" NextFile="Chroma.sys"/>
+    <ROW File="Chroma.sys" Component_="chroma.cat" FileName="Chroma.sys" Attributes="0" SourcePath="Drivers\Sequel\Chroma.sys" SelfReg="false" NextFile="Chroma_x64.sys"/>
+    <ROW File="ChromaB.inf" Component_="ChromaB.inf" FileName="ChromaB.inf" Attributes="0" SourcePath="Drivers\Sequel Chroma4\ChromaB.inf" SelfReg="false" NextFile="ChromaBa.inf"/>
+    <ROW File="ChromaBa.inf" Component_="ChromaB.inf" FileName="ChromaBa.inf" Attributes="0" SourcePath="Drivers\Sequel Chroma4\ChromaBa.inf" SelfReg="false" NextFile="Seqcal.sys"/>
+    <ROW File="Chroma_x64.sys" Component_="chroma.cat" FileName="CHROMA~1.SYS|Chroma_x64.sys" Attributes="0" SourcePath="Drivers\Sequel\Chroma_x64.sys" SelfReg="false" NextFile="ChromaB.inf"/>
+    <ROW File="CirrusSDK.dll" Component_="CirrusSDK.dll" FileName="CIRRUS~1.DLL|CirrusSDK.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\CirrusSDK.dll" SelfReg="false" NextFile="Cpj.dll"/>
+    <ROW File="CommDLL.dll" Component_="CommDLL.dll" FileName="CommDLL.dll" Attributes="0" SourcePath="Drivers\Minolta\CommDLL.dll" SelfReg="false" NextFile="Mltca200.sys_1"/>
+    <ROW File="CommDLL.dll_1" Component_="CommDLL.dll_1" FileName="CommDLL.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\CommDLL.dll" SelfReg="false" NextFile="Cpj07.dll"/>
+    <ROW File="Cpj.dll" Component_="Cpj.dll" FileName="Cpj.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Cpj.dll" SelfReg="false" NextFile="Cpj01.dll"/>
+    <ROW File="Cpj01.dll" Component_="Cpj01.dll" FileName="Cpj01.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Cpj01.dll" SelfReg="false" NextFile="Cpj05.dll"/>
+    <ROW File="Cpj05.dll" Component_="Cpj05.dll" FileName="Cpj05.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Cpj05.dll" SelfReg="false" NextFile="CPj2.dll"/>
+    <ROW File="Cpj07.dll" Component_="Cpj07.dll" FileName="Cpj07.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Cpj07.dll" SelfReg="false" NextFile="mltca200.dll_1"/>
+    <ROW File="Cpj3.dll" Component_="Cpj3.dll" FileName="Cpj3.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Cpj3.dll" SelfReg="false" NextFile="dccmtr.dll"/>
+    <ROW File="DDCCI_Service.exe" Component_="DDCCI_Service.exe" FileName="DDCCI_~1.EXE|DDCCI_Service.exe" Attributes="0" SourcePath="..\..\release\PerfectLum\DDCCI_Service.exe" SelfReg="false" NextFile="Dell_DDCCI.dll" DigSign="true"/>
+    <ROW File="DDCHelper.dll" Component_="DDCHelper.dll" FileName="DDCHEL~1.DLL|DDCHelper.dll" Attributes="0" SourcePath="DDCCI\x86\DDCHelper.dll" SelfReg="false" NextFile="DDCInstall64.exe"/>
+    <ROW File="DDCInstall64.exe" Component_="DDCInstall64.exe" FileName="DDCINS~1.EXE|DDCInstall64.exe" Attributes="0" SourcePath="DDCCI\x64\DDCInstall64.exe" SelfReg="false" NextFile="storage.db" DigSign="true"/>
+    <ROW File="DPInst.exe" Component_="DPInst.exe" FileName="DPInst.exe" Attributes="0" SourcePath="Drivers\DPInst.exe" SelfReg="false" NextFile="dpinst.xml" DigSign="true"/>
+    <ROW File="DPInstx64.exe" Component_="DPInstx64.exe" FileName="DPINST~1.EXE|DPInstx64.exe" Attributes="0" SourcePath="Drivers\DPInstx64.exe" SelfReg="false" NextFile="i1.sys" DigSign="true"/>
+    <ROW File="DellMonitorSdkDll.dll" Component_="DellMonitorSdkDll.dll" FileName="DELLMO~1.DLL|DellMonitorSdkDll.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\DellMonitorSdkDll.dll" SelfReg="false" NextFile="qtaudio_windows.dll"/>
+    <ROW File="Dell_DDCCI.dll" Component_="Dell_DDCCI.dll" FileName="DELL_D~1.DLL|Dell_DDCCI.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Dell_DDCCI.dll" SelfReg="false" NextFile="FTChipID.dll"/>
+    <ROW File="EZEarth.dll" Component_="EZEarth.dll" FileName="EZEarth.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\EZEarth.dll" SelfReg="false" NextFile="qsqlodbc.dll"/>
+    <ROW File="FTChipID.dll" Component_="FTChipID.dll" FileName="FTChipID.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\FTChipID.dll" SelfReg="false" NextFile="ftd2xx.dll"/>
+    <ROW File="Kmsecs200.dll" Component_="Kmsecs200.dll" FileName="KMSECS~1.DLL|Kmsecs200.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Kmsecs200.dll" SelfReg="false" NextFile="libeay32.dll"/>
+    <ROW File="Kmsecs200.inf" Component_="Kmsecs200.inf" FileName="KMSECS~1.INF|Kmsecs200.inf" Attributes="0" SourcePath="Drivers\MinoltaCS200\2000-XP32\Kmsecs200.inf" SelfReg="false" NextFile="Secs200.sys"/>
+    <ROW File="Kmsecs200.inf_1" Component_="Kmsecs200.inf_1" FileName="KMSECS~1.INF|Kmsecs200.inf" Attributes="0" SourcePath="Drivers\MinoltaCS200\2000-XP64\Kmsecs200.inf" SelfReg="false" NextFile="Secs200.sys_1"/>
+    <ROW File="Kmsecs200.inf_2" Component_="cs200_32.cat" FileName="KMSECS~1.INF|Kmsecs200.inf" Attributes="0" SourcePath="Drivers\MinoltaCS200\Vista32\Kmsecs200.inf" SelfReg="false" NextFile="secs200.sys_2"/>
+    <ROW File="Kmsecs200.inf_3" Component_="cs200_64.cat" FileName="KMSECS~1.INF|Kmsecs200.inf" Attributes="0" SourcePath="Drivers\MinoltaCS200\Vista64\Kmsecs200.inf" SelfReg="false" NextFile="secs200.sys_3"/>
+    <ROW File="LICENSE.rtf" Component_="LICENSE.rtf" FileName="LICENSE.rtf" Attributes="0" SourcePath="Drivers\LG\LICENSE.rtf" SelfReg="false" NextFile="ump3410.cat"/>
+    <ROW File="LUTLoader.exe" Component_="LUTLoader.exe" FileName="LUTLOA~1.EXE|LUTLoader.exe" Attributes="0" SourcePath="..\..\release\PerfectLum\LUTLoader.exe" SelfReg="false" NextFile="LutLoaderGuard.exe" DigSign="true"/>
+    <ROW File="LXPlus.dll" Component_="LXPlus.dll" FileName="LXPlus.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\LXPlus.dll" SelfReg="false" NextFile="openssl_license.txt"/>
+    <ROW File="LightConNative.dll" Component_="LightConNative.dll" FileName="LIGHTC~1.DLL|LightConNative.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\LightConNative.dll" SelfReg="false" NextFile="LUTLoader.exe"/>
+    <ROW File="LutLoaderGuard.exe" Component_="LutLoaderGuard.exe" FileName="LUTLOA~2.EXE|LutLoaderGuard.exe" Attributes="0" SourcePath="..\..\release\PerfectLum\LutLoaderGuard.exe" SelfReg="false" NextFile="LXPlus.dll" DigSign="true"/>
+    <ROW File="Mltca200.inf" Component_="ca200_32.cat" FileName="Mltca200.inf" Attributes="0" SourcePath="Drivers\Minolta\Mltca200.inf" SelfReg="false" NextFile="Kmsecs200.inf"/>
+    <ROW File="Mltca200.sys" Component_="Mltca200.sys" FileName="Mltca200.sys" Attributes="0" SourcePath="Drivers\Minolta\amd64\Mltca200.sys" SelfReg="false" NextFile="CA200Srvr.dll"/>
+    <ROW File="Mltca200.sys_1" Component_="Mltca200.sys_1" FileName="Mltca200.sys" Attributes="0" SourcePath="Drivers\Minolta\i386\Mltca200.sys" SelfReg="false" NextFile="mltca200.dll"/>
+    <ROW File="PerfectLum.exe" Component_="PerfectLum.exe" FileName="PERFEC~1.EXE|PerfectLum.exe" Attributes="0" SourcePath="..\..\release\PerfectLum\PerfectLum.exe" SelfReg="false" NextFile="QtSolutions_Servicehead.dll" DigSign="true"/>
+    <ROW File="Qt5Multimedia.dll" Component_="Qt5Multimedia.dll" FileName="QT5MUL~1.DLL|Qt5Multimedia.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Qt5Multimedia.dll" SelfReg="false" NextFile="Qt5Xlsx.dll"/>
+    <ROW File="Qt5Network.dll" Component_="Qt5Network.dll" FileName="QT5NET~1.DLL|Qt5Network.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Qt5Network.dll" SelfReg="false" NextFile="Qt5PrintSupport.dll"/>
+    <ROW File="Qt5PrintSupport.dll" Component_="Qt5PrintSupport.dll" FileName="QT5PRI~1.DLL|Qt5PrintSupport.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Qt5PrintSupport.dll" SelfReg="false" NextFile="qt5script.dll"/>
+    <ROW File="Qt5Widgets.dll" Component_="Qt5Widgets.dll" FileName="QT5WID~1.DLL|Qt5Widgets.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Qt5Widgets.dll" SelfReg="false" NextFile="qt5xml.dll"/>
+    <ROW File="Qt5Xlsx.dll" Component_="Qt5Xlsx.dll" FileName="Qt5Xlsx.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Qt5Xlsx.dll" SelfReg="false" NextFile="SMTPEmail.dll"/>
+    <ROW File="QtSolutions_Servicehead.dll" Component_="QtSolutions_Servicehead.dll" FileName="QTSOLU~1.DLL|QtSolutions_Service-head.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\QtSolutions_Service-head.dll" SelfReg="false" NextFile="QubyxUACService.exe"/>
+    <ROW File="QubyxPCIDeviceDriver.inf" Component_="QubyxPCIDeviceDriver.sys" FileName="QUBYXP~1.INF|QubyxPCIDeviceDriver.inf" Attributes="0" SourcePath="QubyxPCIDeviceDriver\x64\QubyxPCIDeviceDriver.inf" SelfReg="false" NextFile="QubyxPCIDeviceDriver.inf_1"/>
+    <ROW File="QubyxPCIDeviceDriver.inf_1" Component_="QubyxPCIDeviceDriver.sys_1" FileName="QUBYXP~1.INF|QubyxPCIDeviceDriver.inf" Attributes="0" SourcePath="QubyxPCIDeviceDriver\x86\QubyxPCIDeviceDriver.inf" SelfReg="false" NextFile="CA200Srvr.dll_1"/>
+    <ROW File="QubyxPCIDeviceDriver.sys" Component_="QubyxPCIDeviceDriver.sys" FileName="QUBYXP~1.SYS|QubyxPCIDeviceDriver.sys" Attributes="0" SourcePath="QubyxPCIDeviceDriver\x64\QubyxPCIDeviceDriver.sys" SelfReg="false" NextFile="QubyxPCIDeviceDriver.sys_1"/>
+    <ROW File="QubyxPCIDeviceDriver.sys_1" Component_="QubyxPCIDeviceDriver.sys_1" FileName="QUBYXP~1.SYS|QubyxPCIDeviceDriver.sys" Attributes="0" SourcePath="QubyxPCIDeviceDriver\x86\QubyxPCIDeviceDriver.sys" SelfReg="false" NextFile="QubyxPCIDeviceDriver.inf"/>
+    <ROW File="QubyxUACService.exe" Component_="QubyxUACService.exe" FileName="QUBYXU~1.EXE|QubyxUACService.exe" Attributes="0" SourcePath="..\..\release\PerfectLum\QubyxUACService.exe" SelfReg="false" NextFile="RsCRLib.dll" DigSign="true"/>
+    <ROW File="RsCRLib.dll" Component_="RsCRLib.dll" FileName="RsCRLib.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\RsCRLib.dll" SelfReg="false" NextFile="SaveLogTool.exe"/>
+    <ROW File="SMTPEmail.dll" Component_="SMTPEmail.dll" FileName="SMTPEM~1.DLL|SMTPEmail.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\SMTPEmail.dll" SelfReg="false" NextFile="lcd_calib.dll"/>
+    <ROW File="SaveLogTool.exe" Component_="SaveLogTool.exe" FileName="SAVELO~1.EXE|SaveLogTool.exe" Attributes="0" SourcePath="..\..\release\PerfectLum\SaveLogTool.exe" SelfReg="false" NextFile="SipCal.dll" DigSign="true"/>
+    <ROW File="Secs200.sys" Component_="Kmsecs200.inf" FileName="Secs200.sys" Attributes="0" SourcePath="Drivers\MinoltaCS200\2000-XP32\Secs200.sys" SelfReg="false" NextFile="Kmsecs200.inf_1"/>
+    <ROW File="Secs200.sys_1" Component_="Kmsecs200.inf_1" FileName="Secs200.sys" Attributes="0" SourcePath="Drivers\MinoltaCS200\2000-XP64\Secs200.sys" SelfReg="false" NextFile="cs200_32.cat"/>
+    <ROW File="Seqcal.sys" Component_="ChromaB.inf" FileName="Seqcal.sys" Attributes="0" SourcePath="Drivers\Sequel Chroma4\Seqcal.sys" SelfReg="false" NextFile="Spyder3.sys"/>
+    <ROW File="SipCal.dll" Component_="SipCal.dll" FileName="SipCal.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\SipCal.dll" SelfReg="false" NextFile="Spyder3.dll"/>
+    <ROW File="Spyder3.cat" Component_="Spyder3.cat" FileName="Spyder3.cat" Attributes="0" SourcePath="Drivers\Spyder\Spyder3.cat" SelfReg="false" NextFile="Spyder3.inf"/>
+    <ROW File="Spyder3.dll" Component_="Spyder3.dll" FileName="Spyder3.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\Spyder3.dll" SelfReg="false" NextFile="ssleay32.dll"/>
+    <ROW File="Spyder3.inf" Component_="Spyder3.cat" FileName="Spyder3.inf" Attributes="0" SourcePath="Drivers\Spyder\Spyder3.inf" SelfReg="false" NextFile="dcscusb.sys"/>
+    <ROW File="Spyder3.sys" Component_="Spyder3.sys" FileName="Spyder3.sys" Attributes="0" SourcePath="Drivers\Spyder\amd64\Spyder3.sys" SelfReg="false" NextFile="WdfCoInstaller01001.dll"/>
+    <ROW File="Spyder3.sys_1" Component_="Spyder3.sys_1" FileName="Spyder3.sys" Attributes="0" SourcePath="Drivers\Spyder\i386\Spyder3.sys" SelfReg="false" NextFile="WdfCoInstaller01001.dll_1"/>
+    <ROW File="Spyder4.inf" Component_="spyder4.cat" FileName="Spyder4.inf" Attributes="0" SourcePath="Drivers\Spyder4\Spyder4.inf" SelfReg="false" NextFile="dccmtr.sys_2"/>
+    <ROW File="Spyder5.inf" Component_="spyder5.cat" FileName="Spyder5.inf" Attributes="0" SourcePath="Drivers\Spyder5\Spyder5.inf" SelfReg="false" NextFile="xrusb.cat"/>
+    <ROW File="TG18CH.png" Component_="TG18CH.png" FileName="TG18-CH.png" Attributes="0" SourcePath="..\..\release\PerfectLum\images\TG18-CH.png" SelfReg="false" NextFile="TG18KN.png"/>
+    <ROW File="TG18KN.png" Component_="TG18CH.png" FileName="TG18-KN.png" Attributes="0" SourcePath="..\..\release\PerfectLum\images\TG18-KN.png" SelfReg="false" NextFile="TG18MM01.png"/>
+    <ROW File="TG18MM01.png" Component_="TG18CH.png" FileName="TG18-M~1.PNG|TG18-MM01.png" Attributes="0" SourcePath="..\..\release\PerfectLum\images\TG18-MM01.png" SelfReg="false" NextFile="TG18MM02.png"/>
+    <ROW File="TG18MM02.png" Component_="TG18CH.png" FileName="TG18-M~2.PNG|TG18-MM02.png" Attributes="0" SourcePath="..\..\release\PerfectLum\images\TG18-MM02.png" SelfReg="false" NextFile="jeti_core.dll"/>
+    <ROW File="WdfCoInstaller01001.dll" Component_="WdfCoInstaller01001.dll" FileName="WDFCOI~1.DLL|WdfCoInstaller01001.dll" Attributes="0" SourcePath="Drivers\Spyder\amd64\WdfCoInstaller01001.dll" SelfReg="false" NextFile="Spyder3.sys_1"/>
+    <ROW File="WdfCoInstaller01001.dll_1" Component_="WdfCoInstaller01001.dll_1" FileName="WDFCOI~1.DLL|WdfCoInstaller01001.dll" Attributes="0" SourcePath="Drivers\Spyder\i386\WdfCoInstaller01001.dll" SelfReg="false" NextFile="Spyder3.cat"/>
+    <ROW File="WdfCoInstaller01001.dll_2" Component_="WdfCoInstaller01001.dll_2" FileName="WDFCOI~1.DLL|WdfCoInstaller01001.dll" Attributes="0" SourcePath="Drivers\Spyder4\amd64\WdfCoInstaller01001.dll" SelfReg="false" NextFile="dccmtr.sys_1"/>
+    <ROW File="WdfCoInstaller01001.dll_3" Component_="WdfCoInstaller01001.dll_3" FileName="WDFCOI~1.DLL|WdfCoInstaller01001.dll" Attributes="0" SourcePath="Drivers\Spyder4\i386\WdfCoInstaller01001.dll" SelfReg="false" NextFile="spyder4.cat"/>
+    <ROW File="WdfCoInstaller01001.dll_4" Component_="WdfCoInstaller01001.dll_4" FileName="WDFCOI~1.DLL|WdfCoInstaller01001.dll" Attributes="0" SourcePath="Drivers\Spyder5\amd64\WdfCoInstaller01001.dll" SelfReg="false" NextFile="dccmtr.sys_3"/>
+    <ROW File="WdfCoInstaller01001.dll_5" Component_="WdfCoInstaller01001.dll_5" FileName="WDFCOI~1.DLL|WdfCoInstaller01001.dll" Attributes="0" SourcePath="Drivers\Spyder5\i386\WdfCoInstaller01001.dll" SelfReg="false" NextFile="spyder5.cat"/>
+    <ROW File="WdfCoInstaller01007.dll" Component_="WdfCoInstaller01007.dll" FileName="WDFCOI~1.DLL|WdfCoInstaller01007.dll" Attributes="0" SourcePath="Drivers\Spyder3Print\amd64\WdfCoInstaller01007.dll" SelfReg="false" NextFile="dcscusb.cat"/>
+    <ROW File="WdfCoInstaller01007.dll_1" Component_="WdfCoInstaller01007.dll_1" FileName="WDFCOI~1.DLL|WdfCoInstaller01007.dll" Attributes="0" SourcePath="Drivers\Spyder3Print\i386\WdfCoInstaller01007.dll" SelfReg="false" NextFile="dccmtr.sys"/>
+    <ROW File="WdfCoInstaller01009.dll" Component_="WdfCoInstaller01009.dll" FileName="WDFCOI~1.DLL|WdfCoInstaller01009.dll" Attributes="0" SourcePath="Drivers\LG\Common-32\WdfCoInstaller01009.dll" SelfReg="false" NextFile="difxapi.dll_1"/>
+    <ROW File="WdfCoInstaller01009.dll_1" Component_="WdfCoInstaller01009.dll_1" FileName="WDFCOI~1.DLL|WdfCoInstaller01009.dll" Attributes="0" SourcePath="Drivers\LG\Common-64\WdfCoInstaller01009.dll" SelfReg="false" NextFile="LICENSE.rtf"/>
+    <ROW File="WideUsb.inf" Component_="wideusb.cat" FileName="WideUsb.inf" Attributes="0" SourcePath="Drivers\WIDE\x64\WideUsb.inf" SelfReg="false" NextFile="WideUsb.sys"/>
+    <ROW File="WideUsb.inf_1" Component_="wideusb.cat_1" FileName="WideUsb.inf" Attributes="0" SourcePath="Drivers\WIDE\x86\WideUsb.inf" SelfReg="false" NextFile="WideUsb.sys_1"/>
+    <ROW File="WideUsb.sys" Component_="wideusb.cat" FileName="WideUsb.sys" Attributes="0" SourcePath="Drivers\WIDE\x64\WideUsb.sys" SelfReg="false" NextFile="wideusb.cat_1"/>
+    <ROW File="WideUsb.sys_1" Component_="wideusb.cat_1" FileName="WideUsb.sys" Attributes="0" SourcePath="Drivers\WIDE\x86\WideUsb.sys" SelfReg="false" NextFile="DellMonitorSdkDll.dll"/>
+    <ROW File="WideUsbLib.dll" Component_="WideUsbLib.dll" FileName="WIDEUS~1.DLL|WideUsbLib.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\WideUsbLib.dll" SelfReg="false" NextFile="wideusb.cat"/>
+    <ROW File="XdsIII.dll" Component_="XdsIII.dll" FileName="XdsIII.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\XdsIII.dll" SelfReg="false" NextFile="DPInst.exe"/>
+    <ROW File="XrUsb.sys" Component_="xrusb.cat" FileName="XrUsb.sys" Attributes="0" SourcePath="Drivers\X-Rite\XrUsb.sys" SelfReg="false" NextFile="XrUsb64.sys"/>
+    <ROW File="XrUsb64.sys" Component_="xrusb.cat" FileName="XrUsb64.sys" Attributes="0" SourcePath="Drivers\X-Rite\XrUsb64.sys" SelfReg="false" NextFile="XrUsbUnified.inf"/>
+    <ROW File="XrUsbUnified.inf" Component_="xrusb.cat" FileName="XRUSBU~1.INF|XrUsbUnified.inf" Attributes="0" SourcePath="Drivers\X-Rite\XrUsbUnified.inf" SelfReg="false" NextFile="ddcdrv64.sys"/>
+    <ROW File="ca200_32.cat" Component_="ca200_32.cat" FileName="ca200_32.cat" Attributes="0" SourcePath="Drivers\Minolta\ca200_32.cat" SelfReg="false" NextFile="ca200_64.cat"/>
+    <ROW File="ca200_64.cat" Component_="ca200_32.cat" FileName="ca200_64.cat" Attributes="0" SourcePath="Drivers\Minolta\ca200_64.cat" SelfReg="false" NextFile="CommDLL.dll"/>
+    <ROW File="cdluxapi.dll" Component_="cdluxapi.dll" FileName="cdluxapi.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\cdluxapi.dll" SelfReg="false" NextFile="CirrusSDK.dll"/>
+    <ROW File="chroma.cat" Component_="chroma.cat" FileName="chroma.cat" Attributes="0" SourcePath="Drivers\Sequel\chroma.cat" SelfReg="false" NextFile="Chroma.inf"/>
+    <ROW File="cs200_32.cat" Component_="cs200_32.cat" FileName="cs200_32.cat" Attributes="0" SourcePath="Drivers\MinoltaCS200\Vista32\cs200_32.cat" SelfReg="false" NextFile="Kmsecs200.inf_2"/>
+    <ROW File="cs200_64.cat" Component_="cs200_64.cat" FileName="cs200_64.cat" Attributes="0" SourcePath="Drivers\MinoltaCS200\Vista64\cs200_64.cat" SelfReg="false" NextFile="Kmsecs200.inf_3"/>
+    <ROW File="dccmtr.dll" Component_="dccmtr.dll" FileName="dccmtr.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\dccmtr.dll" SelfReg="false" NextFile="dcscdrv.dll"/>
+    <ROW File="dccmtr.sys" Component_="dccmtr.sys" FileName="dccmtr.sys" Attributes="0" SourcePath="Drivers\Spyder4\amd64\dccmtr.sys" SelfReg="false" NextFile="WdfCoInstaller01001.dll_2"/>
+    <ROW File="dccmtr.sys_1" Component_="dccmtr.sys_1" FileName="dccmtr.sys" Attributes="0" SourcePath="Drivers\Spyder4\i386\dccmtr.sys" SelfReg="false" NextFile="WdfCoInstaller01001.dll_3"/>
+    <ROW File="dccmtr.sys_2" Component_="dccmtr.sys_2" FileName="dccmtr.sys" Attributes="0" SourcePath="Drivers\Spyder5\amd64\dccmtr.sys" SelfReg="false" NextFile="WdfCoInstaller01001.dll_4"/>
+    <ROW File="dccmtr.sys_3" Component_="dccmtr.sys_3" FileName="dccmtr.sys" Attributes="0" SourcePath="Drivers\Spyder5\i386\dccmtr.sys" SelfReg="false" NextFile="WdfCoInstaller01001.dll_5"/>
+    <ROW File="dcscdrv.dll" Component_="dcscdrv.dll" FileName="dcscdrv.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\dcscdrv.dll" SelfReg="false" NextFile="DDCCI_Service.exe"/>
+    <ROW File="dcscusb.cat" Component_="dcscusb.cat" FileName="dcscusb.cat" Attributes="0" SourcePath="Drivers\Spyder3Print\dcscusb.cat" SelfReg="false" NextFile="dcscusb.inf"/>
+    <ROW File="dcscusb.inf" Component_="dcscusb.cat" FileName="dcscusb.inf" Attributes="0" SourcePath="Drivers\Spyder3Print\dcscusb.inf" SelfReg="false" NextFile="dcscusb.sys_1"/>
+    <ROW File="dcscusb.sys" Component_="dcscusb.sys" FileName="dcscusb.sys" Attributes="0" SourcePath="Drivers\Spyder3Print\amd64\dcscusb.sys" SelfReg="false" NextFile="WdfCoInstaller01007.dll"/>
+    <ROW File="dcscusb.sys_1" Component_="dcscusb.sys_1" FileName="dcscusb.sys" Attributes="0" SourcePath="Drivers\Spyder3Print\i386\dcscusb.sys" SelfReg="false" NextFile="WdfCoInstaller01007.dll_1"/>
+    <ROW File="dcxmtr.dll" Component_="dcxmtr.dll" FileName="dcxmtr.dll" Attributes="0" SourcePath="..\..\qubyxlibs\Sensor\Win\sensordll\dcxmtr.dll" SelfReg="false" NextFile="dcxmtr.lib"/>
+    <ROW File="dcxmtr.lib" Component_="openssl_license.txt" FileName="dcxmtr.lib" Attributes="0" SourcePath="..\..\qubyxlibs\Sensor\Win\sensordll\dcxmtr.lib" SelfReg="false"/>
+    <ROW File="ddcdrv.sys" Component_="openssl_license.txt" FileName="ddcdrv.sys" Attributes="0" SourcePath="DDCCI\x86\ddcdrv.sys" SelfReg="false" NextFile="DDCHelper.dll"/>
+    <ROW File="ddcdrv64.sys" Component_="openssl_license.txt" FileName="ddcdrv64.sys" Attributes="0" SourcePath="DDCCI\x64\ddcdrv64.sys" SelfReg="false" NextFile="ddcdrv.sys"/>
+    <ROW File="difxapi.dll" Component_="difxapi.dll" FileName="difxapi.dll" Attributes="0" SourcePath="Drivers\LG\Common-32\difxapi.dll" SelfReg="false" NextFile="umpf3410.i51"/>
+    <ROW File="difxapi.dll_1" Component_="difxapi.dll_1" FileName="difxapi.dll" Attributes="0" SourcePath="Drivers\LG\Common-64\difxapi.dll" SelfReg="false" NextFile="umpf3410.i51_1"/>
+    <ROW File="dpinst.xml" Component_="dpinst.xml" FileName="dpinst.xml" Attributes="0" SourcePath="Drivers\dpinst.xml" SelfReg="false" NextFile="DPInstx64.exe"/>
+    <ROW File="dsengine.dll" Component_="dsengine.dll" FileName="dsengine.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\mediaservice\dsengine.dll" SelfReg="false" NextFile="qtmedia_audioengine.dll"/>
+    <ROW File="ftbusui.dll" Component_="ftbusui.dll" FileName="ftbusui.dll" Attributes="0" SourcePath="Drivers\Gossen\amd64\ftbusui.dll" SelfReg="false" NextFile="ftcserco.dll"/>
+    <ROW File="ftbusui.dll_1" Component_="ftbusui.dll_1" FileName="ftbusui.dll" Attributes="0" SourcePath="Drivers\Gossen\i386\ftbusui.dll" SelfReg="false" NextFile="ftcserco.dll_1"/>
+    <ROW File="ftbusui.dll_2" Component_="ftbusui.dll_2" FileName="ftbusui.dll" Attributes="0" SourcePath="Drivers\Pehamed\amd64\ftbusui.dll" SelfReg="false" NextFile="ftcserco.dll_2"/>
+    <ROW File="ftbusui.dll_3" Component_="ftbusui.dll_3" FileName="ftbusui.dll" Attributes="0" SourcePath="Drivers\Pehamed\i386\ftbusui.dll" SelfReg="false" NextFile="ftcserco.dll_3"/>
+    <ROW File="ftcserco.dll" Component_="ftcserco.dll" FileName="ftcserco.dll" Attributes="0" SourcePath="Drivers\Gossen\amd64\ftcserco.dll" SelfReg="false" NextFile="ftd2xx.lib"/>
+    <ROW File="ftcserco.dll_1" Component_="ftcserco.dll_1" FileName="ftcserco.dll" Attributes="0" SourcePath="Drivers\Gossen\i386\ftcserco.dll" SelfReg="false" NextFile="ftd2xx.dll_1"/>
+    <ROW File="ftcserco.dll_2" Component_="ftcserco.dll_2" FileName="ftcserco.dll" Attributes="0" SourcePath="Drivers\Pehamed\amd64\ftcserco.dll" SelfReg="false" NextFile="ftd2xx.lib_2"/>
+    <ROW File="ftcserco.dll_3" Component_="ftcserco.dll_3" FileName="ftcserco.dll" Attributes="0" SourcePath="Drivers\Pehamed\i386\ftcserco.dll" SelfReg="false" NextFile="ftd2xx.dll_2"/>
+    <ROW File="ftd2xx.dll" Component_="ftd2xx.dll" FileName="ftd2xx.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\ftd2xx.dll" SelfReg="false" NextFile="hct99hid.dll"/>
+    <ROW File="ftd2xx.dll_1" Component_="ftd2xx.dll_1" FileName="ftd2xx.dll" Attributes="0" SourcePath="Drivers\Gossen\i386\ftd2xx.dll" SelfReg="false" NextFile="ftd2xx.lib_1"/>
+    <ROW File="ftd2xx.dll_2" Component_="ftd2xx.dll_2" FileName="ftd2xx.dll" Attributes="0" SourcePath="Drivers\Pehamed\i386\ftd2xx.dll" SelfReg="false" NextFile="ftd2xx.lib_3"/>
+    <ROW File="ftd2xx.h" Component_="ftd2xx.h_1" FileName="ftd2xx.h" Attributes="0" SourcePath="Drivers\Pehamed\ftd2xx.h" SelfReg="false" NextFile="ftdibus.cat_1"/>
+    <ROW File="ftd2xx.lib" Component_="ftd2xx.lib" FileName="ftd2xx.lib" Attributes="0" SourcePath="Drivers\Gossen\amd64\ftd2xx.lib" SelfReg="false" NextFile="ftd2xx64.dll"/>
+    <ROW File="ftd2xx.lib_1" Component_="ftd2xx.lib_1" FileName="ftd2xx.lib" Attributes="0" SourcePath="Drivers\Gossen\i386\ftd2xx.lib" SelfReg="false" NextFile="ftdibus.sys_1"/>
+    <ROW File="ftd2xx.lib_2" Component_="ftd2xx.lib_2" FileName="ftd2xx.lib" Attributes="0" SourcePath="Drivers\Pehamed\amd64\ftd2xx.lib" SelfReg="false" NextFile="ftd2xx64.dll_1"/>
+    <ROW File="ftd2xx.lib_3" Component_="ftd2xx.lib_3" FileName="ftd2xx.lib" Attributes="0" SourcePath="Drivers\Pehamed\i386\ftd2xx.lib" SelfReg="false" NextFile="ftdibus.sys_3"/>
+    <ROW File="ftd2xx.lib_4" Component_="ftd2xx.lib_4" FileName="ftd2xx.lib" Attributes="0" SourcePath="Drivers\Pehamed\Static\amd64\ftd2xx.lib" SelfReg="false" NextFile="ftd2xx.lib_5"/>
+    <ROW File="ftd2xx.lib_5" Component_="ftd2xx.lib_5" FileName="ftd2xx.lib" Attributes="0" SourcePath="Drivers\Pehamed\Static\i386\ftd2xx.lib" SelfReg="false" NextFile="qubyxpcidevicedriver.cat"/>
+    <ROW File="ftd2xx64.dll" Component_="ftd2xx64.dll" FileName="ftd2xx64.dll" Attributes="0" SourcePath="Drivers\Gossen\amd64\ftd2xx64.dll" SelfReg="false" NextFile="ftdibus.sys"/>
+    <ROW File="ftd2xx64.dll_1" Component_="ftd2xx64.dll_1" FileName="ftd2xx64.dll" Attributes="0" SourcePath="Drivers\Pehamed\amd64\ftd2xx64.dll" SelfReg="false" NextFile="ftdibus.sys_2"/>
+    <ROW File="ftdibus.cat" Component_="ftd2xx.h" FileName="ftdibus.cat" Attributes="0" SourcePath="Drivers\Gossen\ftdibus.cat" SelfReg="false" NextFile="ftdibus.inf"/>
+    <ROW File="ftdibus.cat_1" Component_="ftd2xx.h_1" FileName="ftdibus.cat" Attributes="0" SourcePath="Drivers\Pehamed\ftdibus.cat" SelfReg="false" NextFile="ftdibus.inf_1"/>
+    <ROW File="ftdibus.inf" Component_="ftd2xx.h" FileName="ftdibus.inf" Attributes="0" SourcePath="Drivers\Gossen\ftdibus.inf" SelfReg="false" NextFile="ftdiport.cat"/>
+    <ROW File="ftdibus.inf_1" Component_="ftd2xx.h_1" FileName="ftdibus.inf" Attributes="0" SourcePath="Drivers\Pehamed\ftdibus.inf" SelfReg="false" NextFile="ftdiport.cat_1"/>
+    <ROW File="ftdibus.sys" Component_="ftd2xx.lib" FileName="ftdibus.sys" Attributes="0" SourcePath="Drivers\Gossen\amd64\ftdibus.sys" SelfReg="false" NextFile="ftlang.dll"/>
+    <ROW File="ftdibus.sys_1" Component_="ftd2xx.lib_1" FileName="ftdibus.sys" Attributes="0" SourcePath="Drivers\Gossen\i386\ftdibus.sys" SelfReg="false" NextFile="ftlang.dll_1"/>
+    <ROW File="ftdibus.sys_2" Component_="ftd2xx.lib_2" FileName="ftdibus.sys" Attributes="0" SourcePath="Drivers\Pehamed\amd64\ftdibus.sys" SelfReg="false" NextFile="ftlang.dll_2"/>
+    <ROW File="ftdibus.sys_3" Component_="ftd2xx.lib_3" FileName="ftdibus.sys" Attributes="0" SourcePath="Drivers\Pehamed\i386\ftdibus.sys" SelfReg="false" NextFile="ftlang.dll_3"/>
+    <ROW File="ftdiport.cat" Component_="ftd2xx.h" FileName="ftdiport.cat" Attributes="0" SourcePath="Drivers\Gossen\ftdiport.cat" SelfReg="false" NextFile="ftdiport.inf"/>
+    <ROW File="ftdiport.cat_1" Component_="ftd2xx.h_1" FileName="ftdiport.cat" Attributes="0" SourcePath="Drivers\Pehamed\ftdiport.cat" SelfReg="false" NextFile="ftdiport.inf_1"/>
+    <ROW File="ftdiport.inf" Component_="ftd2xx.h" FileName="ftdiport.inf" Attributes="0" SourcePath="Drivers\Gossen\ftdiport.inf" SelfReg="false" NextFile="ftbusui.dll_1"/>
+    <ROW File="ftdiport.inf_1" Component_="ftd2xx.h_1" FileName="ftdiport.inf" Attributes="0" SourcePath="Drivers\Pehamed\ftdiport.inf" SelfReg="false" NextFile="ftbusui.dll_3"/>
+    <ROW File="ftlang.dll" Component_="ftlang.dll" FileName="ftlang.dll" Attributes="0" SourcePath="Drivers\Gossen\amd64\ftlang.dll" SelfReg="false" NextFile="ftser2k.sys"/>
+    <ROW File="ftlang.dll_1" Component_="ftlang.dll_1" FileName="ftlang.dll" Attributes="0" SourcePath="Drivers\Gossen\i386\ftlang.dll" SelfReg="false" NextFile="ftser2k.sys_1"/>
+    <ROW File="ftlang.dll_2" Component_="ftlang.dll_2" FileName="ftlang.dll" Attributes="0" SourcePath="Drivers\Pehamed\amd64\ftlang.dll" SelfReg="false" NextFile="ftser2k.sys_2"/>
+    <ROW File="ftlang.dll_3" Component_="ftlang.dll_3" FileName="ftlang.dll" Attributes="0" SourcePath="Drivers\Pehamed\i386\ftlang.dll" SelfReg="false" NextFile="ftser2k.sys_3"/>
+    <ROW File="ftser2k.sys" Component_="ftd2xx.lib" FileName="ftser2k.sys" Attributes="0" SourcePath="Drivers\Gossen\amd64\ftser2k.sys" SelfReg="false" NextFile="ftserui2.dll"/>
+    <ROW File="ftser2k.sys_1" Component_="ftd2xx.lib_1" FileName="ftser2k.sys" Attributes="0" SourcePath="Drivers\Gossen\i386\ftser2k.sys" SelfReg="false" NextFile="ftserui2.dll_1"/>
+    <ROW File="ftser2k.sys_2" Component_="ftd2xx.lib_2" FileName="ftser2k.sys" Attributes="0" SourcePath="Drivers\Pehamed\amd64\ftser2k.sys" SelfReg="false" NextFile="ftserui2.dll_2"/>
+    <ROW File="ftser2k.sys_3" Component_="ftd2xx.lib_3" FileName="ftser2k.sys" Attributes="0" SourcePath="Drivers\Pehamed\i386\ftser2k.sys" SelfReg="false" NextFile="ftserui2.dll_3"/>
+    <ROW File="ftserui2.dll" Component_="ftserui2.dll" FileName="ftserui2.dll" Attributes="0" SourcePath="Drivers\Gossen\amd64\ftserui2.dll" SelfReg="false" NextFile="ftdibus.cat"/>
+    <ROW File="ftserui2.dll_1" Component_="ftserui2.dll_1" FileName="ftserui2.dll" Attributes="0" SourcePath="Drivers\Gossen\i386\ftserui2.dll" SelfReg="false" NextFile="Mltca200.sys"/>
+    <ROW File="ftserui2.dll_2" Component_="ftserui2.dll_2" FileName="ftserui2.dll" Attributes="0" SourcePath="Drivers\Pehamed\amd64\ftserui2.dll" SelfReg="false" NextFile="ftd2xx.h"/>
+    <ROW File="ftserui2.dll_3" Component_="ftserui2.dll_3" FileName="ftserui2.dll" Attributes="0" SourcePath="Drivers\Pehamed\i386\ftserui2.dll" SelfReg="false" NextFile="ftd2xx.lib_4"/>
+    <ROW File="hct99hid.dll" Component_="hct99hid.dll" FileName="hct99hid.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\hct99hid.dll" SelfReg="false" NextFile="i1d3SDK.dll"/>
+    <ROW File="i1.sys" Component_="i1.sys" FileName="i1.sys" Attributes="0" SourcePath="Drivers\Eye-One\i1.sys" SelfReg="false" NextFile="i1display.sys"/>
+    <ROW File="i1Pro.dll" Component_="i1Pro.dll" FileName="i1Pro.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\i1Pro.dll" SelfReg="false" NextFile="TG18CH.png"/>
+    <ROW File="i1_display.inf" Component_="i1.sys" FileName="I1_DIS~1.INF|i1_display.inf" Attributes="0" SourcePath="Drivers\Eye-One\i1_display.inf" SelfReg="false" NextFile="i1_driver.cat"/>
+    <ROW File="i1_driver.cat" Component_="i1.sys" FileName="I1_DRI~1.CAT|i1_driver.cat" Attributes="0" SourcePath="Drivers\Eye-One\i1_driver.cat" SelfReg="false" NextFile="i1_io2.inf"/>
+    <ROW File="i1_iSis.inf" Component_="i1.sys" FileName="i1_iSis.inf" Attributes="0" SourcePath="Drivers\Eye-One\i1_iSis.inf" SelfReg="false" NextFile="i1_monitor.inf"/>
+    <ROW File="i1_io2.inf" Component_="i1.sys" FileName="i1_io2.inf" Attributes="0" SourcePath="Drivers\Eye-One\i1_io2.inf" SelfReg="false" NextFile="i1_iSis.inf"/>
+    <ROW File="i1_monitor.inf" Component_="i1.sys" FileName="I1_MON~1.INF|i1_monitor.inf" Attributes="0" SourcePath="Drivers\Eye-One\i1_monitor.inf" SelfReg="false" NextFile="i1_pro.inf"/>
+    <ROW File="i1_pro.inf" Component_="i1.sys" FileName="i1_pro.inf" Attributes="0" SourcePath="Drivers\Eye-One\i1_pro.inf" SelfReg="false" NextFile="i1_x64.sys"/>
+    <ROW File="i1_x64.sys" Component_="i1.sys" FileName="i1_x64.sys" Attributes="0" SourcePath="Drivers\Eye-One\i1_x64.sys" SelfReg="false" NextFile="ftbusui.dll"/>
+    <ROW File="i1d3SDK.dll" Component_="i1d3SDK.dll" FileName="i1d3SDK.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\i1d3SDK.dll" SelfReg="false" NextFile="i1Pro.dll"/>
+    <ROW File="i1display.sys" Component_="i1.sys" FileName="I1DISP~1.SYS|i1display.sys" Attributes="0" SourcePath="Drivers\Eye-One\i1display.sys" SelfReg="false" NextFile="i1display_x64.sys"/>
+    <ROW File="i1display_x64.sys" Component_="i1.sys" FileName="I1DISP~2.SYS|i1display_x64.sys" Attributes="0" SourcePath="Drivers\Eye-One\i1display_x64.sys" SelfReg="false" NextFile="i1io2.sys"/>
+    <ROW File="i1iSis.sys" Component_="i1.sys" FileName="i1iSis.sys" Attributes="0" SourcePath="Drivers\Eye-One\i1iSis.sys" SelfReg="false" NextFile="i1iSis_x64.sys"/>
+    <ROW File="i1iSis_x64.sys" Component_="i1.sys" FileName="I1ISIS~1.SYS|i1iSis_x64.sys" Attributes="0" SourcePath="Drivers\Eye-One\i1iSis_x64.sys" SelfReg="false" NextFile="i1_display.inf"/>
+    <ROW File="i1io2.sys" Component_="i1.sys" FileName="i1io2.sys" Attributes="0" SourcePath="Drivers\Eye-One\i1io2.sys" SelfReg="false" NextFile="i1io2_x64.sys"/>
+    <ROW File="i1io2_x64.sys" Component_="i1.sys" FileName="I1IO2_~1.SYS|i1io2_x64.sys" Attributes="0" SourcePath="Drivers\Eye-One\i1io2_x64.sys" SelfReg="false" NextFile="i1iSis.sys"/>
+    <ROW File="jeti_core.dll" Component_="jeti_core.dll" FileName="JETI_C~1.DLL|jeti_core.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\jeti_core.dll" SelfReg="false" NextFile="Kmsecs200.dll"/>
+    <ROW File="lcd_calib.dll" Component_="lcd_calib.dll" FileName="LCD_CA~1.DLL|lcd_calib.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\lcd_calib.dll" SelfReg="false" NextFile="libcolour.dll"/>
+    <ROW File="libCSSG2.dll" Component_="libCSSG2.dll" FileName="libCSSG2.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libCSSG2.dll" SelfReg="false" NextFile="libDDCCImctrl.dll"/>
+    <ROW File="libDDCCImctrl.dll" Component_="libDDCCImctrl.dll" FileName="LIBDDC~1.DLL|libDDCCImctrl.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libDDCCImctrl.dll" SelfReg="false" NextFile="libEizMonCtrl.dll"/>
+    <ROW File="libEGL.dll" Component_="libEGL.dll" FileName="libEGL.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libEGL.dll" SelfReg="false" NextFile="libGLESV2.dll"/>
+    <ROW File="libEizMonCtrl.dll" Component_="libEizMonCtrl.dll" FileName="LIBEIZ~1.DLL|libEizMonCtrl.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libEizMonCtrl.dll" SelfReg="false" NextFile="libemc.dll"/>
+    <ROW File="libGLESV2.dll" Component_="libGLESV2.dll" FileName="LIBGLE~1.DLL|libGLESV2.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libGLESV2.dll" SelfReg="false" NextFile="opengl32sw.dll"/>
+    <ROW File="libHIDmctrl.dll" Component_="libHIDmctrl.dll" FileName="LIBHID~1.DLL|libHIDmctrl.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libHIDmctrl.dll" SelfReg="false" NextFile="libKMcalib.dll"/>
+    <ROW File="libKMcalib.dll" Component_="libKMcalib.dll" FileName="LIBKMC~1.DLL|libKMcalib.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libKMcalib.dll" SelfReg="false" NextFile="libmctrl.dll"/>
+    <ROW File="libSerial.dll" Component_="libSerial.dll" FileName="LIBSER~1.DLL|libSerial.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libSerial.dll" SelfReg="false" NextFile="difxapi.dll"/>
+    <ROW File="libcolour.dll" Component_="libcolour.dll" FileName="LIBCOL~1.DLL|libcolour.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libcolour.dll" SelfReg="false" NextFile="libCSSG2.dll"/>
+    <ROW File="libeay32.dll" Component_="libeay32.dll" FileName="libeay32.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libeay32.dll" SelfReg="false" NextFile="libgcc_s_dw21.dll"/>
+    <ROW File="libemc.dll" Component_="libemc.dll" FileName="libemc.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libemc.dll" SelfReg="false" NextFile="libHIDmctrl.dll"/>
+    <ROW File="libgcc_s_dw21.dll" Component_="libgcc_s_dw21.dll" FileName="LIBGCC~1.DLL|libgcc_s_dw2-1.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libgcc_s_dw2-1.dll" SelfReg="false" NextFile="libstdc6.dll"/>
+    <ROW File="libmSensor.dll" Component_="libmSensor.dll" FileName="LIBMSE~1.DLL|libmSensor.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libmSensor.dll" SelfReg="false" NextFile="libscal.dll"/>
+    <ROW File="libmctrl.dll" Component_="libmctrl.dll" FileName="libmctrl.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libmctrl.dll" SelfReg="false" NextFile="libmdcorrector.dll"/>
+    <ROW File="libmdcorrector.dll" Component_="libmdcorrector.dll" FileName="LIBMDC~1.DLL|libmdcorrector.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libmdcorrector.dll" SelfReg="false" NextFile="libmeasurementdevice.dll"/>
+    <ROW File="libmeasurementdevice.dll" Component_="libmeasurementdevice.dll" FileName="LIBMEA~1.DLL|libmeasurementdevice.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libmeasurementdevice.dll" SelfReg="false" NextFile="libmptag.dll"/>
+    <ROW File="libmptag.dll" Component_="libmptag.dll" FileName="libmptag.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libmptag.dll" SelfReg="false" NextFile="libmSensor.dll"/>
+    <ROW File="libscal.dll" Component_="libscal.dll" FileName="libscal.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libscal.dll" SelfReg="false" NextFile="libSerial.dll"/>
+    <ROW File="libstdc6.dll" Component_="libstdc6.dll" FileName="LIBSTD~1.DLL|libstdc++-6.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libstdc++-6.dll" SelfReg="false" NextFile="libwinpthread1.dll"/>
+    <ROW File="libwinpthread1.dll" Component_="libwinpthread1.dll" FileName="LIBWIN~1.DLL|libwinpthread-1.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\libwinpthread-1.dll" SelfReg="false" NextFile="LightConNative.dll"/>
+    <ROW File="mltca200.dll" Component_="mltca200.dll" FileName="mltca200.dll" Attributes="0" SourcePath="Drivers\Minolta\mltca200.dll" SelfReg="false" NextFile="Mltca200.inf"/>
+    <ROW File="mltca200.dll_1" Component_="mltca200.dll_1" FileName="mltca200.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\mltca200.dll" SelfReg="false" NextFile="EZEarth.dll"/>
+    <ROW File="opengl32sw.dll" Component_="opengl32sw.dll" FileName="OPENGL~1.DLL|opengl32sw.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\opengl32sw.dll" SelfReg="false" NextFile="qgenericbearer.dll"/>
+    <ROW File="openssl_license.txt" Component_="openssl_license.txt" FileName="OPENSS~1.TXT|openssl_license.txt" Attributes="0" SourcePath="..\..\release\PerfectLum\openssl_license.txt" SelfReg="false" NextFile="PerfectLum.exe"/>
+    <ROW File="qdds.dll" Component_="qdds.dll" FileName="qdds.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\imageformats\qdds.dll" SelfReg="false" NextFile="qgif.dll"/>
+    <ROW File="qgenericbearer.dll" Component_="qgenericbearer.dll" FileName="QGENER~1.DLL|qgenericbearer.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\bearer\qgenericbearer.dll" SelfReg="false" NextFile="qnativewifibearer.dll"/>
+    <ROW File="qgif.dll" Component_="qgif.dll" FileName="qgif.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\imageformats\qgif.dll" SelfReg="false" NextFile="qicns.dll"/>
+    <ROW File="qicns.dll" Component_="qicns.dll" FileName="qicns.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\imageformats\qicns.dll" SelfReg="false" NextFile="qico.dll"/>
+    <ROW File="qico.dll" Component_="qico.dll" FileName="qico.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\imageformats\qico.dll" SelfReg="false" NextFile="qjpeg.dll"/>
+    <ROW File="qjpeg.dll" Component_="qjpeg.dll" FileName="qjpeg.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\imageformats\qjpeg.dll" SelfReg="false" NextFile="qsvg.dll"/>
+    <ROW File="qnativewifibearer.dll" Component_="qnativewifibearer.dll" FileName="QNATIV~1.DLL|qnativewifibearer.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\bearer\qnativewifibearer.dll" SelfReg="false" NextFile="windowsprintersupport.dll"/>
+    <ROW File="qsqlite.dll" Component_="qsqlite.dll" FileName="qsqlite.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\sqldrivers\qsqlite.dll" SelfReg="false" NextFile="qsqlmysql.dll"/>
+    <ROW File="qsqlmysql.dll" Component_="qsqlmysql.dll" FileName="QSQLMY~1.DLL|qsqlmysql.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\sqldrivers\qsqlmysql.dll" SelfReg="false" NextFile="qsqlpsql.dll"/>
+    <ROW File="qsqlodbc.dll" Component_="qsqlodbc.dll" FileName="qsqlodbc.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\sqldrivers\qsqlodbc.dll" SelfReg="false" NextFile="WideUsbLib.dll"/>
+    <ROW File="qsqlpsql.dll" Component_="qsqlpsql.dll" FileName="qsqlpsql.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\sqldrivers\qsqlpsql.dll" SelfReg="false" NextFile="qt5core.dll"/>
+    <ROW File="qsvg.dll" Component_="qsvg.dll" FileName="qsvg.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\imageformats\qsvg.dll" SelfReg="false" NextFile="qtga.dll"/>
+    <ROW File="qsvgicon.dll" Component_="qsvgicon.dll" FileName="qsvgicon.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\iconengines\qsvgicon.dll" SelfReg="false" NextFile="qdds.dll"/>
+    <ROW File="qt5core.dll" Component_="qt5core.dll" FileName="qt5core.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\qt5core.dll" SelfReg="false" NextFile="qt5gui.dll"/>
+    <ROW File="qt5gui.dll" Component_="qt5gui.dll" FileName="qt5gui.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\qt5gui.dll" SelfReg="false" NextFile="Qt5Network.dll"/>
+    <ROW File="qt5script.dll" Component_="qt5script.dll" FileName="QT5SCR~1.DLL|qt5script.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\qt5script.dll" SelfReg="false" NextFile="qt5sql.dll"/>
+    <ROW File="qt5sql.dll" Component_="qt5sql.dll" FileName="qt5sql.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\qt5sql.dll" SelfReg="false" NextFile="qt5svg.dll"/>
+    <ROW File="qt5svg.dll" Component_="qt5svg.dll" FileName="qt5svg.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\qt5svg.dll" SelfReg="false" NextFile="Qt5Widgets.dll"/>
+    <ROW File="qt5xml.dll" Component_="qt5xml.dll" FileName="qt5xml.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\qt5xml.dll" SelfReg="false" NextFile="libEGL.dll"/>
+    <ROW File="qtaudio_windows.dll" Component_="qtaudio_windows.dll" FileName="QTAUDI~1.DLL|qtaudio_windows.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\audio\qtaudio_windows.dll" SelfReg="false" NextFile="dsengine.dll"/>
+    <ROW File="qtga.dll" Component_="qtga.dll" FileName="qtga.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\imageformats\qtga.dll" SelfReg="false" NextFile="qtiff.dll"/>
+    <ROW File="qtiff.dll" Component_="qtiff.dll" FileName="qtiff.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\imageformats\qtiff.dll" SelfReg="false" NextFile="qwbmp.dll"/>
+    <ROW File="qtmedia_audioengine.dll" Component_="qtmedia_audioengine.dll" FileName="QTMEDI~1.DLL|qtmedia_audioengine.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\mediaservice\qtmedia_audioengine.dll" SelfReg="false" NextFile="qtmultimedia_m3u.dll"/>
+    <ROW File="qtmultimedia_m3u.dll" Component_="qtmultimedia_m3u.dll" FileName="QTMULT~1.DLL|qtmultimedia_m3u.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\playlistformats\qtmultimedia_m3u.dll" SelfReg="false" NextFile="Qt5Multimedia.dll"/>
+    <ROW File="qubyxpcidevicedriver.cat" Component_="QubyxPCIDeviceDriver.sys" FileName="QUBYXP~1.CAT|qubyxpcidevicedriver.cat" Attributes="0" SourcePath="QubyxPCIDeviceDriver\x64\qubyxpcidevicedriver.cat" SelfReg="false" NextFile="qubyxpcidevicedriver.cat_1"/>
+    <ROW File="qubyxpcidevicedriver.cat_1" Component_="QubyxPCIDeviceDriver.sys_1" FileName="QUBYXP~1.CAT|qubyxpcidevicedriver.cat" Attributes="0" SourcePath="QubyxPCIDeviceDriver\x86\qubyxpcidevicedriver.cat" SelfReg="false" NextFile="dcxmtr.dll"/>
+    <ROW File="qwbmp.dll" Component_="qwbmp.dll" FileName="qwbmp.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\imageformats\qwbmp.dll" SelfReg="false" NextFile="qwebp.dll"/>
+    <ROW File="qwebp.dll" Component_="qwebp.dll" FileName="qwebp.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\imageformats\qwebp.dll" SelfReg="false" NextFile="qwindows.dll"/>
+    <ROW File="qwindows.dll" Component_="qwindows.dll" FileName="qwindows.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\platforms\qwindows.dll" SelfReg="false" NextFile="qsqlite.dll"/>
+    <ROW File="secs200.sys_2" Component_="cs200_32.cat" FileName="secs200.sys" Attributes="0" SourcePath="Drivers\MinoltaCS200\Vista32\secs200.sys" SelfReg="false" NextFile="cs200_64.cat"/>
+    <ROW File="secs200.sys_3" Component_="cs200_64.cat" FileName="secs200.sys" Attributes="0" SourcePath="Drivers\MinoltaCS200\Vista64\secs200.sys" SelfReg="false" NextFile="chroma.cat"/>
+    <ROW File="spyder4.cat" Component_="spyder4.cat" FileName="spyder4.cat" Attributes="0" SourcePath="Drivers\Spyder4\spyder4.cat" SelfReg="false" NextFile="Spyder4.inf"/>
+    <ROW File="spyder5.cat" Component_="spyder5.cat" FileName="spyder5.cat" Attributes="0" SourcePath="Drivers\Spyder5\spyder5.cat" SelfReg="false" NextFile="Spyder5.inf"/>
+    <ROW File="ssleay32.dll" Component_="ssleay32.dll" FileName="ssleay32.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\ssleay32.dll" SelfReg="false" NextFile="usbi2cmsc.dll"/>
+    <ROW File="storage.db" Component_="storage.db" FileName="storage.db" Attributes="0" SourcePath="DB\storage.db" SelfReg="false" NextFile="qsvgicon.dll"/>
+    <ROW File="ump3410.cat" Component_="ump3410.cat" FileName="ump3410.cat" Attributes="0" SourcePath="Drivers\LG\Win7-32\ump3410.cat" SelfReg="false" NextFile="umpusbvista.sys"/>
+    <ROW File="ump3410.cat_1" Component_="ump3410.cat_1" FileName="ump3410.cat" Attributes="0" SourcePath="Drivers\LG\Win7-64\ump3410.cat" SelfReg="false" NextFile="umpusbvista.sys_1"/>
+    <ROW File="umpf3410.i51" Component_="umpf3410.i51" FileName="umpf3410.i51" Attributes="0" SourcePath="Drivers\LG\Common-32\umpf3410.i51" SelfReg="false" NextFile="usbinst.exe"/>
+    <ROW File="umpf3410.i51_1" Component_="umpf3410.i51_1" FileName="umpf3410.i51" Attributes="0" SourcePath="Drivers\LG\Common-64\umpf3410.i51" SelfReg="false" NextFile="usbinst.exe_1"/>
+    <ROW File="umpusbvista.sys" Component_="ump3410.cat" FileName="UMPUSB~1.SYS|umpusbvista.sys" Attributes="0" SourcePath="Drivers\LG\Win7-32\umpusbvista.sys" SelfReg="false" NextFile="ump3410.cat_1"/>
+    <ROW File="umpusbvista.sys_1" Component_="ump3410.cat_1" FileName="UMPUSB~1.SYS|umpusbvista.sys" Attributes="0" SourcePath="Drivers\LG\Win7-64\umpusbvista.sys" SelfReg="false" NextFile="ftbusui.dll_2"/>
+    <ROW File="usbi2cmsc.dll" Component_="usbi2cmsc.dll" FileName="USBI2C~1.DLL|usbi2cmsc.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\usbi2cmsc.dll" SelfReg="false" NextFile="XdsIII.dll"/>
+    <ROW File="usbinst.exe" Component_="usbinst.exe" FileName="usbinst.exe" Attributes="0" SourcePath="Drivers\LG\Common-32\usbinst.exe" SelfReg="false" NextFile="usbuart3410.inf" DigSign="true"/>
+    <ROW File="usbinst.exe_1" Component_="usbinst.exe_1" FileName="usbinst.exe" Attributes="0" SourcePath="Drivers\LG\Common-64\usbinst.exe" SelfReg="false" NextFile="usbuart3410.inf_1" DigSign="true"/>
+    <ROW File="usbuart3410.inf" Component_="umpf3410.i51" FileName="USBUAR~1.INF|usbuart3410.inf" Attributes="0" SourcePath="Drivers\LG\Common-32\usbuart3410.inf" SelfReg="false" NextFile="WdfCoInstaller01009.dll"/>
+    <ROW File="usbuart3410.inf_1" Component_="umpf3410.i51_1" FileName="USBUAR~1.INF|usbuart3410.inf" Attributes="0" SourcePath="Drivers\LG\Common-64\usbuart3410.inf" SelfReg="false" NextFile="WdfCoInstaller01009.dll_1"/>
+    <ROW File="wideusb.cat" Component_="wideusb.cat" FileName="wideusb.cat" Attributes="0" SourcePath="Drivers\WIDE\x64\wideusb.cat" SelfReg="false" NextFile="WideUsb.inf"/>
+    <ROW File="wideusb.cat_1" Component_="wideusb.cat_1" FileName="wideusb.cat" Attributes="0" SourcePath="Drivers\WIDE\x86\wideusb.cat" SelfReg="false" NextFile="WideUsb.inf_1"/>
+    <ROW File="windowsprintersupport.dll" Component_="windowsprintersupport.dll" FileName="WINDOW~1.DLL|windowsprintersupport.dll" Attributes="0" SourcePath="..\..\release\PerfectLum\plugins\printsupport\windowsprintersupport.dll" SelfReg="false" NextFile="QubyxPCIDeviceDriver.sys"/>
+    <ROW File="xrusb.cat" Component_="xrusb.cat" FileName="xrusb.cat" Attributes="0" SourcePath="Drivers\X-Rite\xrusb.cat" SelfReg="false" NextFile="XrUsb.sys"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AiPersistentDataComponent">
+    <ROW PersistentRow="storage.db" Type="0" Condition="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="." PackageFileName="perfectlum" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FirewallExceptionComponent">
+    <ROW FirewallException="PerfectLumSuite" DisplayName="PerfectLum Suite" Enabled="1" Scope="*" Condition="((?PerfectLum.exe=2) AND ($PerfectLum.exe=3))" Profiles="0" AppPath="[#PerfectLum.exe]" Protocol="ANY"/>
+    <ROW FirewallException="PerfectLumSuiteHelper" DisplayName="PerfectLum Suite Helper" Enabled="1" Scope="*" Condition="((?LUTLoader.exe=2) AND ($LUTLoader.exe=3))" Profiles="0" AppPath="[#LUTLoader.exe]" Protocol="ANY"/>
+    <ROW FirewallException="PerfectLumSuiteHelperGuard" DisplayName="PerfectLum Suite Helper Guard" Enabled="1" Scope="*" Condition="((?LutLoaderGuard.exe=2) AND ($LutLoaderGuard.exe=3))" Profiles="0" AppPath="[#LutLoaderGuard.exe]" Protocol="ANY"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_AiBackupImmediate" Description="Preparing backup operation" DescriptionLocId="ActionText.Description.AI_AiBackupImmediate" Template="Path: [1]" TemplateLocId="ActionText.Template.AI_AiBackupImmediate"/>
+    <ROW Action="AI_AiBackupRollback" Description="Rollback backup" DescriptionLocId="ActionText.Description.AI_AiBackupRollback" Template="Path: [1]" TemplateLocId="ActionText.Template.AI_AiBackupRollback"/>
+    <ROW Action="AI_AiRestoreDeferred" Description="Executing restore operation" DescriptionLocId="ActionText.Description.AI_AiRestoreDeferred" Template="Path: [1]" TemplateLocId="ActionText.Template.AI_AiRestoreDeferred"/>
+    <ROW Action="AI_AiRestoreDeferredImpersonate" Description="Executing restore operation" DescriptionLocId="ActionText.Description.AI_AiRestoreDeferred" Template="Path: [1]" TemplateLocId="ActionText.Template.AI_AiRestoreDeferred"/>
+    <ROW Action="AI_AiRestoreRollback" Description="Rollback restore" DescriptionLocId="ActionText.Description.AI_AiRestoreRollback" Template="Path: [1]" TemplateLocId="ActionText.Template.AI_AiRestoreRollback"/>
+    <ROW Action="AI_FwConfig" Description="Executing Windows Firewall configurations" DescriptionLocId="ActionText.Description.AI_FwConfig" Template="Configuring Windows Firewall rule: &quot;[1]&quot;" TemplateLocId="ActionText.Template.AI_FwConfig"/>
+    <ROW Action="AI_FwInstall" Description="Generating actions to configure Windows Firewall" DescriptionLocId="ActionText.Description.AI_FwInstall"/>
+    <ROW Action="AI_FwRemove" Description="Executing Windows Firewall configurations" DescriptionLocId="ActionText.Description.AI_FwRemove" Template="Configuring Windows Firewall rule:  &quot;[1]&quot;" TemplateLocId="ActionText.Template.AI_FwRemove"/>
+    <ROW Action="AI_FwRollback" Description="Rolling back Windows Firewall configurations." DescriptionLocId="ActionText.Description.AI_FwRollback" Template="Rolling back Windows Firewall configurations." TemplateLocId="ActionText.Template.AI_FwRollback"/>
+    <ROW Action="AI_FwUninstall" Description="Generating actions to configure Windows Firewall" DescriptionLocId="ActionText.Description.AI_FwUninstall"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="NetFirewall.dll" SourcePath="&lt;AI_CUSTACTS&gt;NetFirewall.dll"/>
+    <ROW Name="ResourceCleaner.dll" SourcePath="&lt;AI_CUSTACTS&gt;ResourceCleaner.dll"/>
+    <ROW Name="SideImage.bmp" SourcePath="Themes\PerfectLum_LG\SideImage.bmp"/>
+    <ROW Name="TopImage.bmp" SourcePath="Themes\PerfectLum_LG\TopImage.bmp"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="viewer.exe" SourcePath="&lt;AI_CUSTACTS&gt;viewer.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCheckBoxComponent">
+    <ROW Property="INSTALL_DRIVERS" Value="Yes"/>
+    <ROW Property="RUN_POST_INSTALL" Value="Yes"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="FolderDlg" Control="CheckBox_1" Type="CheckBox" X="20" Y="160" Width="251" Height="13" Attributes="3" Property="INSTALL_DRIVERS" Text="Automatically register the sensor drivers during the installation" Order="1400"/>
+    <ROW Dialog_="FolderDlg" Control="CheckBox_2" Type="CheckBox" X="20" Y="185" Width="245" Height="13" Attributes="3" Property="RUN_POST_INSTALL" Text="Run post install configuration" Order="1500"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Text="PerfectLum_license.rtf" Order="400" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText" MsiKey="LicenseAgreementDlg#AgreementText"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_AiBackupCleanup" Condition="1" Ordering="102"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_AiBackupCleanup" Condition="1" Ordering="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+    <ROW Directory_="PerfectLum4_Dir" Component_="PerfectLum4" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AiBackupCleanup" Type="1" Source="ResourceCleaner.dll" Target="OnAiBackupCleanup" WithoutSeq="true"/>
+    <ROW Action="AI_AiBackupImmediate" Type="1" Source="ResourceCleaner.dll" Target="OnAiBackupImmediate"/>
+    <ROW Action="AI_AiBackupRollback" Type="11521" Source="ResourceCleaner.dll" Target="OnAiBackupRollback"/>
+    <ROW Action="AI_AiRestoreDeferred" Type="11265" Source="ResourceCleaner.dll" Target="OnAiRestoreDeferred"/>
+    <ROW Action="AI_AiRestoreDeferredImpersonate" Type="9217" Source="ResourceCleaner.dll" Target="OnAiRestoreDeferredImpersonate"/>
+    <ROW Action="AI_AiRestoreRollback" Type="11521" Source="ResourceCleaner.dll" Target="OnAiRestoreRollback" WithoutSeq="true"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DATA_SETTER_1" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_FwConfig" Type="11265" Source="NetFirewall.dll" Target="OnFwConfig" WithoutSeq="true"/>
+    <ROW Action="AI_FwInstall" Type="1" Source="NetFirewall.dll" Target="OnFwInstall" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_FwRemove" Type="11265" Source="NetFirewall.dll" Target="OnFwRemove" WithoutSeq="true"/>
+    <ROW Action="AI_FwRollback" Type="11521" Source="NetFirewall.dll" Target="OnFwRollback" WithoutSeq="true"/>
+    <ROW Action="AI_FwUninstall" Type="1" Source="NetFirewall.dll" Target="OnFwUninstall" AdditionalSeq="AI_DATA_SETTER_1"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="DDCInstall64.exe" Type="3090" Source="DDCInstall64.exe"/>
+    <ROW Action="InstallMinolta" Type="3138" Source="viewer.exe" Target="/RunAsAdmin /HideWindow /dir &quot;[APPDIR]&quot; regsvr32 /s CA200Srvr.dll" Options="1"/>
+    <ROW Action="Installx64PCIDriver" Type="3170" Source="APPDIR" Target="&quot;[System64Folder]rundll32.exe&quot; setupapi.dll,InstallHinfSection DefaultInstall 132 [APPDIR]QbxDrivers\QubyxPCIDeviceDriver\x64\QubyxPCIDeviceDriver.inf"/>
+    <ROW Action="Installx86PCIDriver" Type="3170" Source="APPDIR" Target="&quot;[SystemFolder]rundll32.exe&quot; setupapi.dll,InstallHinfSection DefaultInstall 132 [APPDIR]QbxDrivers\QubyxPCIDeviceDriver\x86\QubyxPCIDeviceDriver.inf"/>
+    <ROW Action="LUTLoader_start" Type="210" Source="LUTLoader.exe" Target="SHOW_FIRSTRUN_WINDOW={IF ([RUN_POST_INSTALL]=checked) &quot;&quot; ELSE &quot;firstrunsettings&quot;} &quot;LICENSE_EMAIL=&quot;[LICENSE_EMAIL] &quot;LICENSE_NUMBER=&quot;[LICENSE_NUMBER] &quot;LICENSE_LINK=&quot;[LICENSE_LINK] &quot;REMOTE_LINK=&quot;[REMOTE_LINK] &quot;REMOTE_USERNAME=&quot;[REMOTE_USERNAME] &quot;REMOTE_USER=&quot;[REMOTE_USER] &quot;REMOTE_NAME=&quot;[REMOTE_NAME] &quot;REMOTE_PASSWORD=&quot;[REMOTE_PASSWORD] &quot;REMOTE_WORKGROUP=&quot;[REMOTE_WORKGROUP] &quot;SILENCE_MSG=&quot;[SILENCE_MSG] &quot;USE_PROXY=&quot;[USE_PROXY] &quot;PROXY_USER=&quot;[PROXY_USER] &quot;PROXY_SERVER_IP=&quot;[PROXY_SERVER_IP] &quot;PROXY_PORT=&quot;[PROXY_PORT] &quot;PROXY_PASSWORD=&quot;[PROXY_PASSWORD] &quot;FAKE_START=&quot;[FAKE_START]"/>
+<!--     <ROW Action="LutLoaderGuard_start" Type="1746" Source="LutLoaderGuard.exe"/> -->
+    <ROW Action="PerfectLumInstall" Type="3154" Source="PerfectLum.exe" Target="install"/>
+    <ROW Action="Rename64BitDDCDRV" Type="3138" Source="viewer.exe" Target="/RunAsAdmin /HideWindow /dir &quot;[APPDIR]&quot; rename ddcdrv64.sys ddcdrv.sys" Options="1"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+    <ROW Action="StartPCIDriver" Type="3170" Source="APPDIR" Target="&quot;[SystemFolder]sc.exe&quot; start QubyxPCIDeviceDriver"/>
+    <ROW Action="StopPCIDriver" Type="3170" Source="APPDIR" Target="&quot;[SystemFolder]sc.exe&quot; stop QubyxPCIDeviceDriver"/>
+    <ROW Action="install_drivers_32" Type="3154" Source="DPInst.exe"/>
+    <ROW Action="install_drivers_64" Type="3154" Source="DPInstx64.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="LUTLoader.exe" SourcePath="..\..\release\PerfectLum\LUTLoader.exe" Index="0"/>
+    <ROW Name="PerfectLum.exe" SourcePath="..\..\release\PerfectLum\PerfectLum.exe" Index="0"/>
+    <ROW Name="SystemFoldermsiexec.exe" SourcePath="&lt;AI_RES&gt;uninstall.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="InstallFinalize" Sequence="6599" SeqType="0" MsiKey="InstallFinalize"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1502"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="DDCInstall64.exe" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) ) AND ( VersionNT64 )" Sequence="6406"/>
+    <ROW Action="PerfectLumInstall" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) )" Sequence="6405"/>
+    <ROW Action="Rename64BitDDCDRV" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) ) AND ( VersionNT64 )" Sequence="6401"/>
+    <ROW Action="install_drivers_32" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) ) AND ( Not VersionNT64 AND INSTALL_DRIVERS=&quot;checked&quot; )" Sequence="6402"/>
+    <ROW Action="install_drivers_64" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) ) AND ( VersionNT64 AND INSTALL_DRIVERS=&quot;checked&quot; )" Sequence="6403"/>
+    <ROW Action="InstallMinolta" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) ) AND ( INSTALL_DRIVERS=&quot;checked&quot; )" Sequence="6404"/>
+    <ROW Action="AI_FwInstall" Condition="(VersionNT &gt;= 501) AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5849"/>
+    <ROW Action="AI_FwUninstall" Condition="(VersionNT &gt;= 501) AND (REMOVE=&quot;ALL&quot;)" Sequence="1699"/>
+    <ROW Action="AI_AiBackupImmediate" Sequence="1401"/>
+    <ROW Action="AI_AiBackupRollback" Sequence="1501"/>
+    <ROW Action="AI_AiRestoreDeferred" Sequence="6597"/>
+    <ROW Action="AI_DATA_SETTER" Condition="(VersionNT &gt;= 501) AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5848"/>
+    <ROW Action="AI_DATA_SETTER_1" Condition="(VersionNT &gt;= 501) AND (REMOVE=&quot;ALL&quot;)" Sequence="1698"/>
+    <ROW Action="Installx64PCIDriver" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) ) AND ( VersionNT64 )" Sequence="6409"/>
+    <ROW Action="Installx86PCIDriver" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) ) AND ( Not VersionNT64 )" Sequence="6408"/>
+    <ROW Action="StopPCIDriver" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) )" Sequence="6407"/>
+    <ROW Action="StartPCIDriver" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) )" Sequence="6410"/>
+    <ROW Action="RemoveExistingProducts" Condition="AI_UPGRADE&lt;&gt;&quot;No&quot;" Sequence="1402" SeqType="0" MsiKey="RemoveExistingProducts"/>
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="201"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_AiRestoreDeferredImpersonate" Sequence="6598"/>
+    <ROW Action="LUTLoader_start" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) )" Sequence="6411"/>
+<!--     <ROW Action="LutLoaderGuard_start" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) )" Sequence="6412"/> -->
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT40Display]" DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLockPermComponent">
+    <ROW LockObject="storage.db" Table="File" User="Everyone" Permission="1880096767" Flags="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiServCtrlComponent">
+    <ROW ServiceControl="DDCCI_Service.exe" Name="QubyxDDCCI_Service_PerfectLum" Event="161" Wait="1" Component_="DDCCI_Service.exe"/>
+    <ROW ServiceControl="QubyxUACService.exe" Name="QubyxUACService_PerfectLum" Event="161" Wait="1" Component_="QubyxUACService.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiServInstComponent">
+    <ROW ServiceInstall="DDCCI_Service.exe" Name="QubyxDDCCI_Service_PerfectLum" DisplayName="QubyxDDCCI_Service_PerfectLum" ServiceType="16" StartType="2" ErrorControl="1" Component_="DDCCI_Service.exe" Description="QubyxDDCCI_Service_PerfectLum"/>
+    <ROW ServiceInstall="QubyxUACService.exe" Name="QubyxUACService_PerfectLum" DisplayName="QubyxUACService_PerfectLum" ServiceType="16" StartType="2" ErrorControl="1" Component_="QubyxUACService.exe" Description="QubyxUACService_PerfectLum"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="PerfectLum" Directory_="PerfectLum4_Dir" Name="PERFEC~1|PerfectLum" Component_="PerfectLum.exe" Target="[#PerfectLum.exe]" Hotkey="0" Icon_="PerfectLum.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="PerfectLumHelper" Directory_="PerfectLum4_Dir" Name="PERFEC~2|PerfectLum Helper" Component_="LUTLoader.exe" Target="[#LUTLoader.exe]" Hotkey="0" Icon_="LUTLoader.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="PerfectLumSuite" Directory_="SHORTCUTDIR" Name="PERFEC~1|PerfectLum Suite" Component_="PerfectLum.exe" Target="[#PerfectLum.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="PerfectLumSuiteHelper" Directory_="SHORTCUTDIR" Name="PERFEC~2|PerfectLum Suite Helper" Component_="LUTLoader.exe" Target="[#LUTLoader.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="PerfectLumSuiteHelperGuard" Directory_="StartupFolder" Name="PERFEC~3|PerfectLum Suite Helper Guard" Component_="LutLoaderGuard.exe" Target="[#LutLoaderGuard.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="PerfectLumSuiteHelper_1" Directory_="StartupFolder" Name="PERFEC~1|PerfectLum Suite Helper" Component_="LUTLoader.exe" Target="[#LUTLoader.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="PerfectLumSuite_1" Directory_="DesktopFolder" Name="PERFEC~1|PerfectLum Suite" Component_="PerfectLum.exe" Target="[#PerfectLum.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Uninstall" Directory_="SHORTCUTDIR" Name="UNINST~1|Uninstall" Component_="qsqlmysql.dll" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Hotkey="0" Icon_="SystemFoldermsiexec.exe" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="UninstallPerfectLum" Directory_="PerfectLum4_Dir" Name="UNINST~1|Uninstall PerfectLum" Component_="xrusb.cat" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Hotkey="0" Icon_="SystemFoldermsiexec.exe" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="{459E0679-15AF-4F56-88FC-BE9E193FDD0B}" VersionMin="1.0.0" VersionMax="4.0.0" Language="1033" Attributes="261" ActionProperty="UPGRADE_1"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MultipleInstancesComponent">
+    <ATTRIBUTE name="DynamicInstances" value="DefaultBuild:false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
+    <ROW Directory_="APPDIR" SourcePath="..\..\release\PerfectLum" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="Drivers_Dir" SourcePath="Drivers" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="QubyxPCIDeviceDriver_Dir" SourcePath="QubyxPCIDeviceDriver" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+  </COMPONENT>
+</DOCUMENT>

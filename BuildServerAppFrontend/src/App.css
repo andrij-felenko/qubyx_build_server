@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(245 , 245, 245); 
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding-top: 40px;
+    /* padding-bottom: 40px; */
+}
+
+.starting-page-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.visible-success-alert,
+.invisible-success-alert {
+    width: 400px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    transition: all 0.2s ease-in-out;
+}  
+
+.visible-success-alert {
+    opacity: 1;
+    visibility: visible;
+}
+
+.invisible-success-alert {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.visible-success-alert div,
+.invisible-success-alert div {
+    background-color: rgb(213, 247, 213);
+}
+
+@media screen and (max-width: 1800px) {
+    .starting-page-container {
+        flex-wrap: wrap;
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .starting-page-container .history-container {
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    /* .history-container .progress-box,
+    .history-container .success-progress-,
+    .history-container .failed-progress {
+        display: block; 
+    } */
+
+    .accordion-head {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid black; */
+    }
+
+    .accordion-head .accordion-head__titles {
+        /* border: 1px solid red; */
+        width: 40%;
+    }
+
+    .accordion-head button {
+        font-size: 0;
+        display: block;
+    }
+
+    .accordion-head button span:first-child {
+        border: 1px solid;
+        padding: 6px;
+        border-radius: 4px;
+        display: block;
+        width: 40px;
+        margin-left: 24px;
+        margin-right: 0;
+    }
+
+    .accordion-head .MuiButton-root {
+        display: block;
+        border: none;
+        padding: 0;
+    }
+
+    .accordion-head .MuiButton-root:hover {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .starting-page-container {
+        width: 100%;
+    }
+
+    .history-container {
+        padding: 0 10px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form .builds-container ul {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}

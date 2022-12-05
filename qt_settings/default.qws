@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QtCreatorSession>
+<!-- Written by QtCreator 7.0.2, 2022-07-31T20:01:39. -->
+<qtcreator>
+ <data>
+  <variable>CascadeSetActive</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>Color</variable>
+  <value type="QString">#666666</value>
+ </data>
+ <data>
+  <variable>EditorSettings</variable>
+  <value type="QByteArray">AAAAD0VkaXRvck1hbmFnZXJWNQAAAAIAAAByAEMAOgAvAFEAdAAvAEUAeABhAG0AcABsAGUAcwAvAFEAdAAtADYALgAzAC4AMQAvAG0AdQBsAHQAaQBtAGUAZABpAGEAdwBpAGQAZwBlAHQAcwAvAHAAbABhAHkAZQByAC8AbQBhAGkAbgAuAGMAcABwAAAADAAAAAAkAAAAAgAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAAAAABUAAAAYABDADoALwBVAHMAZQByAHMALwBiAGEAcgB5AHMALwBPAG4AZQBEAHIAaQB2AGUALwQUBD4EOgRDBDwENQQ9BEIEOAAvAHUAZgBqAGYAZwAvAG0AYQBpAG4ALgBjAHAAcAAAAAwAAAAAIAAAAAIAAAAAAAAAAAAAAAwAAAABAAAAAAAAAAAAAAALAAAABAAAAHIAQwA6AC8AUQB0AC8ARQB4AGEAbQBwAGwAZQBzAC8AUQB0AC0ANgAuADMALgAxAC8AbQB1AGwAdABpAG0AZQBkAGkAYQB3AGkAZABnAGUAdABzAC8AcABsAGEAeQBlAHIALwBtAGEAaQBuAC4AYwBwAHAAAAAQAG0AYQBpAG4ALgBjAHAAcAAAABNDcHBFZGl0b3IuQysrRWRpdG9yAAAAAGAAQwA6AC8AVQBzAGUAcgBzAC8AYgBhAHIAeQBzAC8ATwBuAGUARAByAGkAdgBlAC8EFAQ+BDoEQwQ8BDUEPQRCBDgALwB1AGYAagBmAGcALwBtAGEAaQBuAC4AYwBwAHAAAAAQAG0AYQBpAG4ALgBjAHAAcAAAABNDcHBFZGl0b3IuQysrRWRpdG9yAAAAAHgAQwA6AC8AUQB0AC8ARQB4AGEAbQBwAGwAZQBzAC8AUQB0AC0ANgAuADMALgAxAC8ALwBtAHUAbAB0AGkAbQBlAGQAaQBhAHcAaQBkAGcAZQB0AHMALwBwAGwAYQB5AGUAcgAvAHAAbABhAHkAZQByAC4AYwBwAHAAAAAUAHAAbABhAHkAZQByAC4AYwBwAHAAAAATQ3BwRWRpdG9yLkMrK0VkaXRvcgAAAAB0AEMAOgAvAFEAdAAvAEUAeABhAG0AcABsAGUAcwAvAFEAdAAtADYALgAzAC4AMQAvAC8AbQB1AGwAdABpAG0AZQBkAGkAYQB3AGkAZABnAGUAdABzAC8AcABsAGEAeQBlAHIALwBwAGwAYQB5AGUAcgAuAGgAAAAQAHAAbABhAHkAZQByAC4AaAAAABNDcHBFZGl0b3IuQysrRWRpdG9yAAAAAMMAAAANY3VycmVudGVkaXRvcgAAAGAAQwA6AC8AVQBzAGUAcgBzAC8AYgBhAHIAeQBzAC8ATwBuAGUARAByAGkAdgBlAC8EFAQ+BDoEQwQ8BDUEPQRCBDgALwB1AGYAagBmAGcALwBtAGEAaQBuAC4AYwBwAHAAAAAmAEMAcABwAEUAZABpAHQAbwByAC4AQwArACsARQBkAGkAdABvAHIAAAAgAAAAAgAAAAAAAAAAAAAADAAAAAEAAAAAAAAAAAAAAAsAAAAA</value>
+ </data>
+ <data>
+  <variable>ProjectDependencies</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>ProjectList</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">C:/Users/barys/Documents/dev/develop/qubyx/perfectlum/PL_project_v.2.qbs</value>
+   <value type="QString">C:/Qt/Examples/Qt-6.3.1//multimediawidgets/player/player.pro</value>
+   <value type="QString">C:/Users/barys/OneDrive/Документи/ufjfg/ufjfg.qbs</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>StartupProject</variable>
+  <value type="QString">C:/Users/barys/OneDrive/Документи/ufjfg/ufjfg.qbs</value>
+ </data>
+ <data>
+  <variable>value-ActiveMode</variable>
+  <value type="QString">Project</value>
+ </data>
+ <data>
+  <variable>value-Breakpoints</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>value-ProjectTree.ExpandData</variable>
+  <valuelist type="QVariantList">
+   <valuelist type="QVariantList">
+    <value type="QString">C:/Qt/Examples/Qt-6.3.1/multimediawidgets/player</value>
+    <value type="QString">player</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">C:/Users/barys/OneDrive/Документи/ufjfg</value>
+    <value type="QString">ufjfg</value>
+   </valuelist>
+   <valuelist type="QVariantList">
+    <value type="QString">C:/Qt/Examples/Qt-6.3.1/multimediawidgets/player</value>
+    <value type="QString">Sources</value>
+   </valuelist>
+  </valuelist>
+ </data>
+ <data>
+  <variable>value-TaskWindow.Categories</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">Task.Category.QmlAnalysis</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>value-TaskWindow.IncludeWarnings</variable>
+  <value type="bool">true</value>
+ </data>
+ <data>
+  <variable>valueKeys</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">ActiveMode</value>
+   <value type="QString">Breakpoints</value>
+   <value type="QString">ProjectTree.ExpandData</value>
+   <value type="QString">TaskWindow.Categories</value>
+   <value type="QString">TaskWindow.IncludeWarnings</value>
+  </valuelist>
+ </data>
+</qtcreator>

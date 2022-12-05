@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QtCreatorDebuggers>
+<!-- Written by QtCreator 7.0.2, 2022-07-31T19:56:44. -->
+<qtcreator>
+ <data>
+  <variable>DebuggerItem.0</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="Abis">
+    <value type="QString">x86-windows-msys-pe-64bit</value>
+   </valuelist>
+   <value type="bool" key="AutoDetected">true</value>
+   <value type="QString" key="Binary">C:/Qt/Tools/mingw1120_64/bin/gdb.exe</value>
+   <value type="QString" key="DetectionSource"></value>
+   <value type="QString" key="DisplayName">GNU gdb 11.2.0 for MinGW 11.2.0 64-bit</value>
+   <value type="int" key="EngineType">1</value>
+   <value type="QString" key="Id">Debugger.qt.tools.win64_mingw900</value>
+   <value type="QDateTime" key="LastModified">2022-03-21T05:50:11.000</value>
+   <value type="QString" key="Version">11.2.0</value>
+   <value type="QString" key="WorkingDirectory"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>DebuggerItem.1</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="Abis">
+    <value type="QString">x86-windows-msys-pe-32bit</value>
+   </valuelist>
+   <value type="bool" key="AutoDetected">true</value>
+   <value type="QString" key="Binary">C:/Qt/Tools/mingw810_32/bin/gdb.exe</value>
+   <value type="QString" key="DetectionSource"></value>
+   <value type="QString" key="DisplayName">GNU gdb 8.1 for MinGW 8.1.0 32-bit</value>
+   <value type="int" key="EngineType">1</value>
+   <value type="QString" key="Id">Debugger.qt.tools.win32_mingw810</value>
+   <value type="QDateTime" key="LastModified">2018-05-12T05:35:10.000</value>
+   <value type="QString" key="Version">8.1.0</value>
+   <value type="QString" key="WorkingDirectory"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>DebuggerItem.10</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="Abis">
+    <value type="QString">x86-windows-msvc2017-pe-64bit</value>
+   </valuelist>
+   <value type="bool" key="AutoDetected">true</value>
+   <value type="QString" key="Binary">C:/Program Files/Windows Kits/10/Debuggers/x64/cdb.exe</value>
+   <value type="QString" key="DetectionSource"></value>
+   <value type="QString" key="DisplayName">Автовизначено CDB в C:\Program Files\Windows Kits\10\Debuggers\x64\cdb.exe</value>
+   <value type="int" key="EngineType">4</value>
+   <value type="QString" key="Id">{49730e93-b7d3-4674-9ad5-6ee94d4992a1}</value>
+   <value type="QDateTime" key="LastModified">2018-10-23T02:10:58.000</value>
+   <value type="QString" key="Version">10.0.17763.132</value>
+   <value type="QString" key="WorkingDirectory"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>DebuggerItem.2</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="Abis">
+    <value type="QString">x86-windows-msys-pe-64bit</value>
+   </valuelist>
+   <value type="bool" key="AutoDetected">true</value>
+   <value type="QString" key="Binary">C:/Qt/Tools/mingw810_64/bin/gdb.exe</value>
+   <value type="QString" key="DetectionSource"></value>
+   <value type="QString" key="DisplayName">GNU gdb 8.1 for MinGW 8.1.0 64-bit</value>
+   <value type="int" key="EngineType">1</value>
+   <value type="QString" key="Id">Debugger.qt.tools.win64_mingw810</value>
+   <value type="QDateTime" key="LastModified">2018-05-12T10:28:26.000</value>
+   <value type="QString" key="Version">8.1.0</value>
+   <value type="QString" key="WorkingDirectory"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>DebuggerItem.3</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="Abis">
+    <value type="QString">x86-windows-msys-pe-64bit</value>
+   </valuelist>
+   <value type="bool" key="AutoDetected">true</value>
+   <value type="QString" key="Binary">C:/Qt/Tools/mingw730_64/bin/gdb.exe</value>
+   <value type="QString" key="DetectionSource"></value>
+   <value type="QString" key="DisplayName">GNU gdb 8.1 for MinGW 7.3.0 64-bit</value>
+   <value type="int" key="EngineType">1</value>
+   <value type="QString" key="Id">Debugger.qt.tools.win64_mingw730</value>
+   <value type="QDateTime" key="LastModified">2018-03-19T17:58:11.000</value>
+   <value type="QString" key="Version">8.1.0</value>
+   <value type="QString" key="WorkingDirectory"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>DebuggerItem.4</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="Abis">
+    <value type="QString">x86-windows-msys-pe-32bit</value>
+   </valuelist>
+   <value type="bool" key="AutoDetected">true</value>
+   <value type="QString" key="Binary">C:/Qt/Tools/mingw730_32/bin/gdb.exe</value>
+   <value type="QString" key="DetectionSource"></value>
+   <value type="QString" key="DisplayName">GNU gdb 8.1 for MinGW 7.3.0 32-bit</value>
+   <value type="int" key="EngineType">1</value>
+   <value type="QString" key="Id">Debugger.qt.tools.win32_mingw730</value>
+   <value type="QDateTime" key="LastModified">2018-03-19T15:53:39.000</value>
+   <value type="QString" key="Version">8.1.0</value>
+   <value type="QString" key="WorkingDirectory"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>DebuggerItem.5</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="Abis">
+    <value type="QString">x86-windows-msys-pe-32bit</value>
+   </valuelist>
+   <value type="bool" key="AutoDetected">true</value>
+   <value type="QString" key="Binary">C:/Qt/Tools/mingw530_32/bin/gdb.exe</value>
+   <value type="QString" key="DetectionSource"></value>
+   <value type="QString" key="DisplayName">GNU gdb 7.10.1 for MinGW 5.3.0 32bit</value>
+   <value type="int" key="EngineType">1</value>
+   <value type="QString" key="Id">Debugger.qt.tools.win32_mingw530</value>
+   <value type="QDateTime" key="LastModified">2015-12-29T02:28:28.000</value>
+   <value type="QString" key="Version">7.10.1</value>
+   <value type="QString" key="WorkingDirectory"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>DebuggerItem.6</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="Abis">
+    <value type="QString">x86-windows-msys-pe-32bit</value>
+   </valuelist>
+   <value type="bool" key="AutoDetected">true</value>
+   <value type="QString" key="Binary">C:/Qt/Tools/mingw491_32/bin/gdb.exe</value>
+   <value type="QString" key="DetectionSource"></value>
+   <value type="QString" key="DisplayName">GNU gdb 7.8 for MinGW 4.9.1 32bit</value>
+   <value type="int" key="EngineType">1</value>
+   <value type="QString" key="Id">Debugger.qt.tools.win32_mingw491</value>
+   <value type="QDateTime" key="LastModified">2014-10-23T14:11:35.000</value>
+   <value type="QString" key="Version">7.8.0</value>
+   <value type="QString" key="WorkingDirectory"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>DebuggerItem.7</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="Abis">
+    <value type="QString">x86-windows-msys-pe-32bit</value>
+   </valuelist>
+   <value type="bool" key="AutoDetected">true</value>
+   <value type="QString" key="Binary">C:/Qt/Tools/mingw492_32/bin/gdb.exe</value>
+   <value type="QString" key="DetectionSource"></value>
+   <value type="QString" key="DisplayName">GNU gdb 7.8 for MinGW 4.9.2 32bit</value>
+   <value type="int" key="EngineType">1</value>
+   <value type="QString" key="Id">Debugger.qt.tools.win32_mingw492</value>
+   <value type="QDateTime" key="LastModified">2014-12-21T18:54:23.000</value>
+   <value type="QString" key="Version">7.8.1</value>
+   <value type="QString" key="WorkingDirectory"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>DebuggerItem.8</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="Abis">
+    <value type="QString">x86-windows-msys-pe-32bit</value>
+   </valuelist>
+   <value type="bool" key="AutoDetected">true</value>
+   <value type="QString" key="Binary">C:/Qt/Qt5.6.3/Tools/mingw492_32/bin/gdb.exe</value>
+   <value type="QString" key="DetectionSource"></value>
+   <value type="QString" key="DisplayName">GNU gdb 7.8 for MinGW 4.9.2 32bit</value>
+   <value type="int" key="EngineType">1</value>
+   <value type="QString" key="Id">Debugger.qt.tools.win32_mingw492</value>
+   <value type="QDateTime" key="LastModified">2014-12-21T18:54:23.000</value>
+   <value type="QString" key="Version">7.8.1</value>
+   <value type="QString" key="WorkingDirectory"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>DebuggerItem.9</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="Abis">
+    <value type="QString">x86-windows-msvc2017-pe-32bit</value>
+   </valuelist>
+   <value type="bool" key="AutoDetected">true</value>
+   <value type="QString" key="Binary">C:/Program Files (x86)/Windows Kits/10/Debuggers/x86/cdb.exe</value>
+   <value type="QString" key="DetectionSource"></value>
+   <value type="QString" key="DisplayName">Автовизначено CDB в C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\cdb.exe</value>
+   <value type="int" key="EngineType">4</value>
+   <value type="QString" key="Id">{f5829a4e-514f-4271-bdb7-4c7fa96cfb39}</value>
+   <value type="QDateTime" key="LastModified">2018-10-23T01:41:18.000</value>
+   <value type="QString" key="Version">10.0.17763.132</value>
+   <value type="QString" key="WorkingDirectory"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>DebuggerItem.Count</variable>
+  <value type="int">11</value>
+ </data>
+ <data>
+  <variable>Version</variable>
+  <value type="int">1</value>
+ </data>
+</qtcreator>

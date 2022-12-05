@@ -1,0 +1,3 @@
+[submodule "BuildServerAppFrontend"]
+	path = BuildServerAppFrontend
+	url = https://github.com/BaryYur/BuildServerAppFrontend.git

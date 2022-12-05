@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<regulationsettings><regulation name="Full Black Surface Test" id="Full Black Surface Test">
+        <classifications><classification acc_mandatory="true" graphiccard_reaction="2" name="Main" id="1"/></classifications>
+        <steps>
+            <!-- Step ONE -->
+            <step type="visual" stepcode="101" position="0" name="Does the test pattern looks as you expected?" id="1" target="1">
+                <classification id="1">
+                    <restrictions><restriction frequency="-1" set="0" isacceptance="true"/></restrictions>
+                    <parameters/>
+                    <questions><question value="" set="0"/></questions>
+                </classification>
+                <parameters><parameter value="FULLBLACK" name="testpattern"/></parameters>
+                <question>Does the test pattern looks as you expected?</question>
+            </step>
+
+            <!-- Step TWO -->
+            <step type="visual" stepcode="101" position="0" name="Are there no smudges or scratches on display?" id="2" target="1">
+                <classification id="1">
+                    <restrictions><restriction frequency="-1" set="0" isacceptance="true"/></restrictions>
+                    <parameters/>
+                    <questions><question value="" set="0"/></questions>
+                </classification>
+                <parameters><parameter value="FULLBLACK" name="testpattern"/></parameters>
+                <question>Are there no smudges or scratches on display?</question>
+            </step>
+
+            <!-- Step THREE -->
+            <step type="visual" stepcode="101" position="0" name="Is there no light reflection on display?" id="3" target="0">
+                <classification id="1">
+                    <restrictions><restriction frequency="-1" set="0" isacceptance="true"/></restrictions>
+                    <parameters/>
+                    <questions><question value="" set="0"/></questions>
+                </classification>
+                <parameters><parameter value="FULLBLACK" name="help_0"/></parameters>
+                <question>Is there no light reflection on display?</question>
+            </step>
+
+        </steps>
+    <initialsteps/>
+    </regulation>
+</regulationsettings>

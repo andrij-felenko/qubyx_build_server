@@ -1,0 +1,34 @@
+.error-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr {
+    margin: 5px 0 15px 0;
+}
+
+.error-modal-header .close-modal-btn {
+    color: black;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.error-modal-header .close-modal-btn:hover {
+    color: rgb(92, 92, 92);
+    transition: all 0.2s ease-in-out;
+}
+
+.error-text-container {
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.error-text-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.error-text-container::-webkit-scrollbar-thumb {
+    background-color: #5e6072;
+    border-radius: 8px;
+}
